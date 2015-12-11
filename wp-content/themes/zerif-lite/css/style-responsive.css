@@ -1,0 +1,833 @@
+
+@media (min-width: 1025px){
+	/*--show and hide--*/
+	#header .navigation{
+		display: block;
+	}
+	#header .navigation-tablet{
+		display: none;
+	}
+	#header .navigation nav.navbar>.container .navbar-brand{
+		display: none;
+	}
+	#header .top-header-sp{
+		display: none;
+	}
+	#header .top-header-tablet{
+		display: none;
+	}
+	#header .wrapp-form-search-sp{
+		display: none;
+	}
+	#header .wrapp-form-search-tablet{
+		display: none;
+	}
+}
+/* iPads (portrait) ----------- */
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+	#header .navbar-right{
+		margin-right: -15px;
+	}
+	.language {
+	    position: absolute;
+	    right: 13px;
+	    top: 75px;
+	}
+	#btnPrint{
+		display: none;
+	}
+	#wrapp-details .show-details .content-details img{
+	  margin-bottom: 10px;
+	}
+	
+	body.category-unideal .article-all .wrapp-categories .show-article{
+		min-height: 220px;
+	}
+	#wrapp-details .show-details p{
+		margin: 0;
+	}
+	#wrapp-details .show-details{
+		padding: 15px;
+	}
+	#health-taste.health-taste .show-article.col-md-12 {
+		min-height: 360px;
+	}
+	.article-all .wrapp-categories .show-article{
+		min-height: 255px;
+	}
+	#real-estate.article-all .show-article
+	{
+		min-height: 200px;
+	}
+	h2{
+		font-size: 20px;
+		font-weight: bold;
+	}
+	/*--show and hide--*/
+	#header .navigation nav.navbar>.container .navbar-brand{
+		display: none;
+	}
+	#header .navigation{
+		display: none;
+	}
+	#header .navigation-tablet{
+		display: block;
+	}
+	#header .top-header-sp{
+		display: none;
+	}
+	#header .top-header{
+		display: none;
+	}
+	#header .top-header-tablet{
+		display: block;
+	}
+	#header .wrapp-form-search-sp{
+		display: none;
+	}
+	#header .wrapp-form-search-tablet{
+		display: block;
+	}
+	#wrap-new-adv .big-new-adv ul.unimedia-services{
+		display: none;
+	}
+	#header .navigation nav.navbar-default form.hide-search{
+		/*display: block;*/
+	}
+	/*--css top-header-sp--*/
+	#header .top-header-tablet ul.unimedia-services{
+		width: 100%;
+	}
+	#header .top-header-tablet ul.unimedia-services li{
+		display: block;
+		float: left;
+		width: 16.66666666666667%;
+		/*margin-right: 0.2%;*/
+		border-right: 1px solid #fff;
+	}
+	#header .top-header-tablet ul.unimedia-services li div.services p{
+		padding-left: 22px;
+	}
+	#header .top-header-tablet ul.unimedia-services li div.services.health p,
+	#header .top-header-tablet ul.unimedia-services li div.services.four-seasons p{
+		padding-left: 19px;
+	}
+	#header .top-header-tablet ul.unimedia-services li:last-child{
+		border-right: none;
+	}
+	#header .top-header-tablet ul.unimedia-services li div.services p a{
+		font-size: 8px;
+	}
+	#header .top-header-tablet .container{
+		width: 100%;
+		padding-right: 0;
+		padding-left: 0;
+	}
+	#header .top-header-tablet {
+	    margin: 0px 0 10px;
+	    padding:0;
+	    width: 100%;
+	}
+	#header .navigation nav.navbar-default .navbar-nav>li>a{
+		font-size: 12px;
+		padding:15px 8px;
+	}
+	#wrap-magazine .show-magazine ul li figure figcaption{
+		padding: 5px 2px;
+	}
+	#wrap-magazine .show-magazine ul li figure figcaption p a{
+		font-size: 8.4px;
+	}
+	#wrap-magazine .show-magazine.magazine-search ul li figure figcaption p a{
+		font-size: 14px;
+	}
+	#wrap-new-adv .big-new-adv .show-adv figure figcaption{
+		padding: 5px;
+		font-size: 12px;
+	}
+	#wrap-new-adv .top-sub-adv .show-adv figure figcaption {
+	    padding: 3px;
+	    font-size: 9px;
+	}
+	.article-all .show-article figure figcaption p,
+	.article-all .show-article-thumb figure figcaption a{
+		font-size: 13px;
+	}
+	#header .top-header ul.unimedia-services{
+		margin-top: 0px;
+	}
+	/*--magazine list--*/
+	#wrap-magazine .show-magazine ul li,
+	#wrap-magazine.wrap-magazine-related .show-magazine ul li{
+		width: 100%;
+		padding: 0 5px;
+	}
+	#wrap-magazine.wrap-magazine-related .show-magazine ul li{
+		/*width: 24%;
+	    height: 24%;
+	    margin-right: 1.3333%;
+		margin-bottom:20px;*/
+	}
+	#wrap-magazine.wrap-magazine-related .show-magazine ul li:last-child{
+		margin-right: 0%
+	}
+	#wrap-magazine.wrap-magazine-related .show-magazine.magazine-search ul li{
+	  width: 23.5%;
+	  margin-bottom: 20px;
+	  margin-right: 2%;
+	}
+	#wrap-magazine.wrap-magazine-related .show-magazine.magazine-search ul li:nth-child(5n+5){
+		margin-right: 2%;
+	}
+	#wrap-magazine.wrap-magazine-related .show-magazine.magazine-search ul li:nth-child(4n+4){
+		margin-right: 0;
+	}
+	
+	/*--categories details--*/
+	#wrapp-details .show-details .content-details img{
+	  padding: 0;
+	}
+	.article-all .wrapp-categories figure figcaption a{
+		font-size: 14px;
+	}
+	.article-all .top-sub-featured figure figcaption{
+		line-height: 1.2;
+	}
+	.article-all .top-sub-featured figure figcaption a{
+		font-size: 11px;
+	}
+	.article-all .wrapp-categories figure figcaption div.readmore a,
+	.article-all .top-sub-featured figure figcaption div.readmore a{
+		font-size: 10px;
+	}
+	.article-all .show-article figure figcaption{
+		/*margin: 5px 0 0px;*/
+	}
+	
+	.article-all .show-article figure figcaption p{
+		margin-top: 5px;
+	}
+	#wrap-new-adv .big-new-adv{
+		height: 230px;
+		overflow: hidden;
+	}
+	#wrap-new-adv .big-new-adv .owl-theme .owl-controls{
+		bottom: 40px;
+	}
+	#wrapp-details .show-details form.wpcf7-form input.wpcf7-text{
+	  width: 100%;
+	  height: 32px;
+	}
+	
+	#header .wrapp-form-search-tablet .form-inline div.form-group-sp{
+		position: relative;
+	}
+	#header .wrapp-form-search-tablet .form-inline div.form-group-sp button.btn {
+	    margin-top: 0px;
+	    padding: 7px 12px;
+	    position: absolute;
+	    background-color: #2A255C;
+	    right: 0;
+	    top: 0;
+	    border-radius: 0;
+	    border:none;
+	}
+	#header .wrapp-form-search-tablet .form-inline button i.fa{
+	    color: #fff;
+	}
+	#header .wrapp-form-search-tablet .form-inline .form-group {
+	    margin-bottom: 10px;
+	}
+	#header .navigation-tablet .logo-search img{
+		width: 150px;
+		margin-bottom: 10px;
+	}
+	#header .navigation-tablet .menu-tablet{
+		background-color: #E30513;
+		margin-bottom: 20px;
+		height: 40px;
+	}
+	#header .navigation-tablet .menu-tablet ul li{
+		display: inline-block;
+		float: left;
+		/*margin-right: 10px;*/
+	}
+	#header .navigation-tablet .menu-tablet ul li a{
+		color: #fff;
+		font-size: 12px;
+		padding: 12px 30px 11px 0; 
+		display: block;
+		text-transform: uppercase;
+	}
+	#header .navigation-tablet .wrapp-form-search-tablet .navbar-form{
+		margin-top: 12px;
+		width: 100%;
+		text-align: right;
+	}
+	#header .navigation-tablet .wrapp-form-search-tablet{
+		width: 100%;
+	}
+	#header .navigation-tablet .wrapp-form-search-tablet .navbar-form input.form-control{
+		width: 300px;
+	}
+	/*--footer--*/
+	#footer .wrap-about, #footer .info-social{
+		padding-left: 15px;
+	}
+	#footer .wrap-about h1{
+		font-size: 30px;
+	}
+	#support{
+		bottom: 12%;
+		right: 10px;
+	}
+	#footer .appstore .ios-store a{
+	   margin-bottom: 5px;
+	}
+	/*--deatails page--*/
+	#wrapp-details .top-sub-featured .show-article{
+	  min-height: 170px;
+	}
+	#wrapp-details .top-sub-featured .show-article figure a{
+		float: left;
+		width: 50%;
+		margin-right: 3%;
+	}
+	#wrapp-details .top-sub-featured .show-article figcaption{
+		width: 47%;
+		float: left;
+	}
+	#wrapp-details .top-sub-featured .show-article figcaption a{
+		width: 100%;
+		font-size: 13px;
+	}
+	#wrapp-details .top-sub-featured .show-article{
+		width: 100%;
+		min-height: inherit;
+		margin-bottom: 12px;
+	}
+	
+}
+@media screen and (max-width: 1024px) and (orientation: landscape){
+	.article-all .wrapp-categories .show-article{
+		min-height: 250px;
+	}
+	#real-estate.article-all .show-article
+	{
+		min-height: 200px;
+	}
+	#wrap-new-adv .big-new-adv{
+		height: 303px;
+		overflow: hidden;
+	}
+	#header .top-header-tablet ul.unimedia-services li div.services p a{
+		font-size: 10px;
+	}
+	#header .top-header-tablet ul.unimedia-services li div.services p{
+		padding-left: 27px;
+	}
+	#header .top-header-tablet ul.unimedia-services li div.services.health p,
+	#header .top-header-tablet ul.unimedia-services li div.services.four-seasons p{
+		padding-left: 25px;
+	}
+	#header .top-header-tablet ul.unimedia-services li div.services span.icon-icon-health-01:before,
+	#header .top-header-tablet ul.unimedia-services li div.services span.icon-icon-promotion-01:before,
+	#header .top-header-tablet ul.unimedia-services li div.services span.icon-icon-real-01:before,
+	#header .top-header-tablet ul.unimedia-services li div.services span.icon-icon-taste-01:before,
+	#header .top-header-tablet ul.unimedia-services li div.services span.icon-icon-elect-01:before,
+	#header .top-header-tablet ul.unimedia-services li div.services span.icon-icon-car-01:before{
+	  left: 2px;
+	}
+	#header .top-header-tablet ul.unimedia-services li:last-child{
+		width: 16.67%;
+		border-right: none;
+	}
+}
+@media (max-width:767px){
+	.language a {
+    height: 22px;
+    width: 35px;
+}
+	#header .navbar-right{
+		margin-right: -15px;
+	}
+	.language {
+	    position: absolute;
+	    right: 65px;
+	    top: 71px;
+	}
+	#btnPrint{
+		display: none;
+	}
+	#wrapp-details .show-details p{
+		margin: 0;
+	}
+	#wrapp-details .show-details{
+		padding: 10px;
+	}
+	#real-estate.article-all .show-article{
+		min-height: 240px;
+	}
+	#health-taste.health-taste .show-article.col-md-12{
+		min-height: inherit;
+	}
+	h2{
+		font-size: 20px;
+		font-weight: bold;
+	}
+	/*--show and hide--*/
+	#header .navigation{
+		display: block;
+	}
+	#header .navigation-tablet{
+		display: none;
+	}
+	#header .navigation nav.navbar>.container .navbar-brand{
+		display: block;
+	}
+	#header .navigation-tablet nav.navbar>.container .navbar-brand{
+		display: none;
+	}
+	#header .top-header-sp{
+		display: block;
+	}
+	#header .top-header{
+		display: none;
+	}
+	#header .top-header-tablet{
+		display: none;
+	}
+	#header .wrapp-form-search-sp{
+		display: block;
+		margin-top: 10px;
+	}
+	#header .wrapp-form-search-tablet{
+		display: none;
+	}
+	#wrap-new-adv .big-new-adv ul.unimedia-services{
+		display: none;
+	}
+	#header .navigation nav.navbar-default form.hide-search{
+		display: none;
+	}
+
+	/*--css top-header-sp--*/
+	#header .top-header-sp{
+		width: 100%;
+	}
+	#header .top-header-sp > .container > .row > .col-xs-12{
+		padding-left:0;
+		padding-right: 0;
+	}
+	#header .top-header-sp ul.unimedia-services li{
+		display: inline-block;
+		float: left;
+		width: 16.6666%;
+		border-right: 1px solid #fff;
+	}
+	#header .top-header-sp ul.unimedia-services li:last-child{
+		border-right: 1px solid #34495d;
+	}
+	#header .top-header-sp ul.unimedia-services li div.services p{
+		text-align: center;
+		vertical-align: middle;
+		padding-top: 5px;
+	}
+	#header .top-header-sp ul.unimedia-services li div.services ul.dropdown-menu{
+		min-width: 200%;
+		border-radius:0;
+		border:none;
+		box-shadow: none;
+		margin-top: 0;
+	}
+	#header .top-header-sp ul.unimedia-services li div.services div.dropdown li{
+		padding: 0;
+	}
+	#header .top-header-sp ul.unimedia-services li div.services ul.dropdown-menu li{
+		width: 100%;
+		display: block;
+		border-right: none;
+	}
+	#header .top-header-sp ul.unimedia-services li div.services ul.dropdown-menu li a{
+		color: #fff;
+		font-size: 8px;
+	}
+	#header .top-header-sp ul.unimedia-services li div.services.health ul.dropdown-menu{
+		background-color: #95C11E;
+	}
+	#header .top-header-sp ul.unimedia-services li div.services.taste ul.dropdown-menu{
+		background-color: #F39200;
+	}
+	#header .top-header-sp ul.unimedia-services li div.services.real ul.dropdown-menu{
+		background-color: #302683;
+	}
+	#header .top-header-sp ul.unimedia-services li div.services.home-elect ul.dropdown-menu{
+		background-color: #009BB4;
+	}
+	#header .top-header-sp ul.unimedia-services li div.services.four-seasons ul.dropdown-menu{
+		background-color: #C51A1B;
+	}
+	#header .top-header-sp ul.unimedia-services li div.services.car-tech ul.dropdown-menu{
+		background-color: #34495d;
+		right: -1px;
+		position: absolute;
+		left: auto;
+	}
+
+	/*--customize nav--*/
+	#header .navbar.navbar-default {
+	  background-color: #fff;
+	  margin-top: 10px;
+	  border-color: transparent;
+	  border:none;
+	}
+	#header .navigation nav.navbar-default{
+		background-color: #fff;
+		height: auto;
+	}
+	#header .navigation nav.navbar-default .navbar-brand{
+		padding: 0 0 0 15px;
+		height: auto;
+	}
+	#header .navigation nav.navbar .navbar-brand img {
+	  width: 140px;
+	}
+	#header .navigation nav.navbar-default .navbar-toggle {
+	  margin-top: 10px;
+	  border-color: #999;
+	}
+	#header .navigation nav.navbar-default .navbar-toggle .icon-bar{
+	  background-color: #434343;
+	}
+	#header .navigation nav.navbar-default .navbar-nav>li>a{
+		font-size: 12px;
+	}
+	#header .navigation nav.navbar-default .navbar-collapse{
+		border-color: transparent;
+		padding-right: 0;
+		padding-left: 0;
+		margin-top: 10px;
+	}
+	#header .wrapp-form-search-sp .navbar-form{
+		margin-top: 0;
+		padding:0 15px;
+	}
+	#header .wrapp-form-search-sp .form-inline div.form-group-sp{
+		position: relative;
+	}
+	#header .wrapp-form-search-sp .form-inline div.form-group-sp button.btn {
+	    margin-top: 0px;
+	    padding: 7px 12px;
+	    position: absolute;
+	    background-color: #2A255C;
+	    right: 0;
+	    top: 0;
+	    border-radius: 0;
+	    border:none;
+	}
+	#header .wrapp-form-search-sp .form-inline button i.fa{
+	    color: #fff;
+	}
+	#header .wrapp-form-search-sp .form-inline .form-group {
+	    margin-bottom: 20px;
+	}
+	#header .navigation nav.navbar{
+	  	margin-bottom: 15px;
+	}
+	#header .navigation .dropdown-menu>li>a:hover, 
+	#header .navigation .dropdown-menu>li>a:focus {
+	  	color: #000;
+	  	background-color: transparent;
+	}
+	#header .navigation nav.navbar .nav {
+	  	margin-left: 0;
+	}
+	#header .navigation nav.navbar .navbar-nav {
+	  	margin: 0;
+	  	background-color: #9D9C9C;
+	   	color: #fff; 
+	}
+	#header .navigation nav.navbar .navbar-nav li {
+	   	border-bottom: 1px solid #727272;
+		border-top: 1px solid #cecece;
+	}
+	#header .navigation nav.navbar .navbar-nav li:first-child{
+		border-top: none;
+	}
+	#header .navigation nav.navbar .navbar-nav li:last-child{
+		border-bottom: none;
+	}
+	#header .navigation nav.navbar-default .navbar-nav > .active > a,
+	#header .navigation nav.navbar-default .navbar-nav > .open > a{
+		color: #fff;
+	}
+	#header .navigation nav.navbar .nav > li:hover > a,
+	#header .navigation nav.navbar .nav > li > a:hover{
+		color: #fff;
+	}
+	#header .navigation nav.navbar .navbar-nav span.caret {
+		right: 10px;
+		top: 18px;
+		position: absolute;
+	}
+	#header .navigation nav.navbar .navbar-nav .dropdown-menu {
+	    background-color: #fe6f6f;
+	}
+	#header .navigation nav.navbar .navbar-nav .dropdown-menu li {
+	    border-bottom: none;
+	}
+	#header .navigation nav.navbar .navbar-nav .dropdown-menu li a {
+	    color: #000;
+	    font-size: 16px;
+	    padding: 6px 30px;
+	}
+	#header .navigation nav.navbar-default .navbar-toggle:hover, 
+	#header .navigation nav.navbar-default .navbar-toggle:focus{
+		background-color: transparent;
+	}
+
+	/*--new advertising--*/
+	#wrap-new-adv .big-new-adv .show-adv figure figcaption, 
+	#wrap-new-adv .top-sub-adv .show-adv figure figcaption {
+	    width: 100%;
+	    background-color: #fff;
+	    display: block;
+	    color: #000;
+	    position: inherit;
+	}
+	#wrap-new-adv .big-new-adv .show-adv figure{
+		margin-bottom: 10px;
+	}
+	#wrap-new-adv .big-new-adv .show-adv figure figcaption,
+	#wrap-new-adv .top-sub-adv .show-adv figure figcaption{
+		padding: 5px 	0;
+	}
+	#wrap-new-adv .big-new-adv .show-adv figure figcaption p:first-child,
+	#wrap-new-adv .top-sub-adv .show-adv figure figcaption p:first-child{
+		font-weight: bold;
+	}
+	#wrap-new-adv .big-new-adv .show-adv figure figcaption a, 
+	#wrap-new-adv .top-sub-adv .show-adv figure figcaption a{
+		color: #000;
+	}
+	#wrap-new-adv .top-sub-adv .mg-20{
+		margin-bottom: 10px;
+		min-height: 140px;
+	}
+	#wrap-new-adv .big-new-adv{
+		height: auto;
+	}
+	.article-all .show-article figure figcaption{
+		margin-bottom: 20px;
+	}
+
+	/*--title chung--*/
+	#wrap-magazine .title.magazine,
+	#real-estate .title.real,
+	#travel-edu .title.travel,
+	#four-seasons .title.seasions{
+	  max-width: 100%;
+	}
+	#health-taste .title.health,
+	#health-taste .title.taste{
+	  max-width: 100%;
+	}
+	#wrap-magazine .title.magazine div.line span,
+	#health-taste .title.health div.line span,
+	#health-taste .title.taste div.line span,
+	#real-estate .title.real div.line span,
+	#travel-edu .title.travel div.line span,
+	#four-seasons .title.seasions div.line span{;
+	  left: 40%;
+	}
+	#wrap-magazine{
+		margin-bottom: 20px;
+		padding: 15px 0;
+	}
+	#real-estate, #travel-edu, #four-seasons, #health-taste{
+		margin-bottom: 10px;
+	}
+	/*--slide margazine--*/
+	#wrap-magazine.wrap-magazine-related .show-magazine ul li,
+	#wrap-magazine .show-magazine ul li{
+		width: 100%;
+		height: 100%;
+	}
+	#wrap-magazine.wrap-magazine-related .show-magazine ul li{
+		margin-bottom: 15px;
+		margin-right: 0;
+	}
+	#wrap-magazine.wrap-magazine-related .show-magazine ul li:last-child{
+		margin-bottom: 0;
+	}
+	#wrap-magazine .show-magazine ul div.owl-item{
+		margin:0px;
+	}
+	#wrap-magazine.wrap-magazine-related .show-magazine.magazine-search ul li{
+	  width: 100%;
+	  margin-bottom: 20px;
+	  margin-right: 0;
+	}
+	/*--footer--*/
+	#footer{
+		padding: 15px 0;
+	}
+	#footer .border-right-footer{
+		border-right:none;
+		border-bottom: 1px solid #727272;
+		border-top: 1px solid #cecece;
+	}
+	#footer .border-right-footer.first{
+		border-top: none;
+	}
+	#footer .border-right-footer.last{
+		border-bottom: none;
+	}
+	#footer .wrap-about,
+	#footer .info-social{
+	  padding-left: 0px;
+	}
+	#footer .info-company,
+	#footer .wrap-about{
+		margin-bottom: 20px;
+	}
+	#footer .info-social,
+	#footer .wrap-about{
+		margin-top: 20px;
+	}
+	#footer .info-company p.logo-footer.hiden{
+		display: none;
+	}
+	#footer .appstore .ios-store a,
+	#footer .appstore .google-store a{
+	  width: 100px;
+	  height: 33px;
+	  background-size: 100px;
+	}
+	#footer .appstore .ios-store a{
+	  background-position: 0 -40px;
+	   margin-right: 5px;
+	}
+	/*--categories details--*/
+	#wrapp-details .show-details .content-details img{
+	  padding: 0;
+	  margin-bottom: 10px;
+	}
+	.article-all .wrapp-categories .show-article{
+	  min-height: auto;
+	}
+	#wrapp-details .top-sub-featured .show-article{
+	  min-height: 190px;
+	}
+    .zopim{
+        display: none;
+    }
+    .article-all .show-article figure figcaption div.readmore a{
+		font-size: 10px;
+	}
+	#wrapp-details .show-details form.wpcf7-form input.wpcf7-text{
+	  width: 100%;
+	  height: 32px;
+	}
+	#support{
+		bottom: 0;
+	}
+}
+@media (min-width: 640px) and (max-width: 767px){
+	#header .wrapp-form-search-sp .form-inline .form-group{
+	    width: 48%;
+	    float: left;
+	    margin-right: 4%;
+	}
+	#header .wrapp-form-search-sp .form-inline .form-group:last-child{
+	    margin-right: 0%;
+	}
+}
+@media (min-width:481px) and (max-width: 767px){
+	h2{
+		font-size: 30px;
+	}
+	#wrap-magazine .show-magazine ul div.owl-item{
+		margin-right: 0%;
+	}
+	#wrap-magazine .show-magazine ul li,
+	#wrap-magazine.wrap-magazine-related .show-magazine ul li{
+	    width: 100%;
+	    padding: 0 5px;
+	}
+	#wrap-magazine.wrap-magazine-related .show-magazine ul li:nth-child(2n+2){
+		margin-right: 0%;
+	}  
+	#wrap-new-adv .big-new-adv .show-adv figure figcaption{
+		font-size: 16px;
+	}
+	#wrap-new-adv .top-sub-adv .show-adv figure figcaption{
+		font-size: 14px;
+	}
+	#wrap-magazine .title.magazine div.line span, 
+	#health-taste .title.health div.line span, 
+	#health-taste .title.taste div.line span, 
+	#real-estate .title.real div.line span, 
+	#travel-edu .title.travel div.line span, 
+	#four-seasons .title.seasions div.line span {
+	    left: 45%;
+	}
+	#header .top-header-sp ul.unimedia-services li div.services ul.dropdown-menu li a{
+		font-size: 14px;
+	}
+	#wrap-magazine.wrap-magazine-related .show-magazine.magazine-search ul li{
+	  width: 49%;
+	  margin-bottom: 20px;
+	  margin-right: 2%;
+	}
+	#wrap-magazine.wrap-magazine-related .show-magazine.magazine-search ul li:nth-child(5n+5){
+		margin-right: 2%;
+	}
+	#wrap-magazine.wrap-magazine-related .show-magazine.magazine-search ul li:nth-child(2n+2){
+		margin-right: 0;
+	}
+}
+@media (max-width: 480px){
+	#health-taste.article-all.health-taste .show-article  div.show-article-thumb.col-xs-4{
+		width: 100%
+	}
+	.article-all .show-article figure figcaption a{
+		font-size: 12px;
+		font-weight: bold;
+	}
+	.article-all .show-article figure figcaption p{
+		font-size: 12px;
+	}
+
+}
+@media (max-width: 480px) and (orientation: landscape){
+	#wrap-magazine .title.magazine div.line span, 
+	#health-taste .title.health div.line span, 
+	#health-taste .title.taste div.line span, 
+	#real-estate .title.real div.line span, 
+	#travel-edu .title.travel div.line span, 
+	#four-seasons .title.seasions div.line span{
+		left: 43%;
+	}
+}
+@media (max-width: 320px){
+	#wrapp-details .top-sub-featured .show-article figure a{
+		float: left;
+		width: 50%;
+		margin-right: 3%;
+	}
+	#wrapp-details .top-sub-featured .show-article figcaption{
+		width: 47%;
+		float: left;
+	}
+	#wrapp-details .top-sub-featured .show-article figcaption a{
+		width: 100%;
+		font-size: 13px;
+	}
+	#wrapp-details .top-sub-featured .show-article{
+		width: 100%;
+		min-height: inherit;
+		margin-bottom: 12px;
+	}
+}

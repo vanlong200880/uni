@@ -1,0 +1,1209 @@
+msgid ""
+msgstr "MIME-Version: 1.0\n"
+
+#. Name.
+msgid "Super Socializer"
+msgstr ""
+
+#. Short description.
+msgid "The unique Social Plugin to let you integrate Social Login, Social Share and Social Comments at your website"
+msgstr ""
+
+#. Screenshot description.
+msgid "<strong>Social Login</strong>: Social Login interface at Wordpress login form"
+msgstr ""
+
+#. Screenshot description.
+msgid "<strong>Social Sharing</strong>: A wide variety of sharing icons"
+msgstr ""
+
+#. Screenshot description.
+msgid "<strong>Social Sharing</strong>: Options to chosse size (ranging from 16px to 35px) and shape (round and square) of sharing icons"
+msgstr ""
+
+#. Screenshot description.
+msgid "<strong>Social Sharing</strong>: Around 90 social networks in Social Sharing"
+msgstr ""
+
+#. Screenshot description.
+msgid "<strong>Social Commenting</strong>: WordPress Commenting selected"
+msgstr ""
+
+#. Screenshot description.
+msgid "<strong>Social Commenting</strong>: Facebook Commenting selected"
+msgstr ""
+
+#. Screenshot description.
+msgid "<strong>Social Commenting</strong>: GooglePlus Commenting selected"
+msgstr ""
+
+#. Screenshot description.
+msgid "<strong>Social Commenting</strong>: Disqus Commenting selected"
+msgstr ""
+
+#. Found in description header.
+msgid "Feature list"
+msgstr ""
+
+#. Found in description header.
+msgid "Social Login"
+msgstr ""
+
+#. Found in description header.
+msgid "Social Sharing"
+msgstr ""
+
+#. Found in description header.
+msgid "Facebook Commenting"
+msgstr ""
+
+#. Found in description header.
+msgid "User Profile Data"
+msgstr ""
+
+#. Found in description header.
+msgid "Single sign-on"
+msgstr ""
+
+#. Found in description header.
+msgid "What makes this plugin different and why should I choose this plugin when there are many other social plugins?"
+msgstr ""
+
+#. Found in description header.
+msgid "Important links"
+msgstr ""
+
+#. Found in description list item.
+msgid "Social Sharing from around 100 social networks"
+msgstr ""
+
+#. Found in description list item.
+msgid "Options to specify sharing icon shape - Square and Round"
+msgstr ""
+
+#. Found in description list item.
+msgid "Options to specify sharing icon size - minimum 16 pixels, no upper limit"
+msgstr ""
+
+#. Found in description list item.
+msgid "Enable url shortening to use in sharing"
+msgstr ""
+
+#. Found in description list item.
+msgid "Horizontal and Vertical (floating) layout for sharing"
+msgstr ""
+
+#. Found in description list item.
+msgid "Customizable target url for sharing"
+msgstr ""
+
+#. Found in description list item.
+msgid "Rearrange order of sharing icons"
+msgstr ""
+
+#. Found in description list item.
+msgid "Specify position of sharing icons with respect to content - Top and Bottom"
+msgstr ""
+
+#. Found in description list item.
+msgid "Enable/Disable sharing on default/custom post types"
+msgstr ""
+
+#. Found in description list item.
+msgid "Enable/Disable sharing on individual pages/posts"
+msgstr ""
+
+#. Found in description list item.
+msgid "Enable/Disable total/individual share count(s)"
+msgstr ""
+
+#. Found in description list item.
+msgid "Mobile responsive sharing interface"
+msgstr ""
+
+#. Found in description list item.
+msgid "Enable/Disable vertical/floating sharing interface on mobile device"
+msgstr ""
+
+#. Found in description list item.
+msgid "Social Login from 7 Social Networks - Facebook, Google, Linkedin, Twitter, Vkontakte, Instagram and Xing"
+msgstr ""
+
+#. Found in description list item.
+msgid "Enable Social Login interface at WordPress Login, Register pages and comment form"
+msgstr ""
+
+#. Found in description list item.
+msgid "Syncs user's basic social profile data with WordPress profile"
+msgstr ""
+
+#. Found in description list item.
+msgid "Enable Social Login at WooCommerce checkout page and customer login form"
+msgstr ""
+
+#. Found in description list item.
+msgid "Enable Sharing at WooCommerce products"
+msgstr ""
+
+#. Found in description list item.
+msgid "Syncs user's basic social profile data with WooCommerce profile"
+msgstr ""
+
+#. Found in description list item.
+msgid "Auto-approve comments made by users logged in using Social Login"
+msgstr ""
+
+#. Found in description list item.
+msgid "Use user's social profile avatar as profile picture at your website"
+msgstr ""
+
+#. Found in description list item.
+msgid "Customizable login/post-registration redirection"
+msgstr ""
+
+#. Found in description list item.
+msgid "Enable Facebook Like/Recommend, Google +1, Google Plus Share, Twitter Tweet, Yummly, Buffer, Xing buttons"
+msgstr ""
+
+#. Found in description list item.
+msgid "Enable Social Comments - Facebook Comments, Google Plus Comments, Disqus Comments"
+msgstr ""
+
+#. Found in description list item.
+msgid "Widgets and shortcodes for Social Sharing, Social Login, Social Comments and Like Buttons"
+msgstr ""
+
+#. Found in description list item.
+msgid "Let your users link their social accounts to the account at your website"
+msgstr ""
+
+#. Found in description list item.
+msgid "Compatible with BuddyPress, bbPress, WooCommerce"
+msgstr ""
+
+#. Found in description list item.
+msgid "Multisite Compatible"
+msgstr ""
+
+#. Found in description list item.
+msgid "Supports HTTPS enabled websites"
+msgstr ""
+
+#. Found in description list item.
+msgid "24/7 quickest email support"
+msgstr ""
+
+#. Found in description list item, faq list item.
+msgid "<p><strong>Rapid signup/login</strong>: When using Social network for login, users do not need to type anything (most of the users are already logged into their social accounts). It helps in boosting signup/login rate at your blog.</p>"
+msgstr ""
+
+#. Found in description list item, faq list item.
+msgid "<p><strong>Profile Data</strong>: User's profile data will be saved in your blog database. This data also includes users' email, enabling you to communicate with them.</p>"
+msgstr ""
+
+#. Found in description list item, faq list item.
+msgid "<p><strong>Spam Reduction</strong>: Because social networks authenticate individuals and generally don't allow multiple accounts, the likelihood of false identities and spammers goes down.</p>"
+msgstr ""
+
+#. Found in description list item, faq list item.
+msgid "<p><strong>Increased User Traffic</strong>: When users share content over their Social network, it shows up in front of more people which results in increased user traffic at your website.</p>"
+msgstr ""
+
+#. Found in description list item, faq list item.
+msgid "<p><strong>SEO Optimization</strong>: Social sharing helps your website content get indexed faster and improves other factors that help in search engine optimization of your blog.</p>"
+msgstr ""
+
+#. Found in description list item, faq list item.
+msgid "<p><strong>Virality</strong>: When people comment at your blog using their Facebook account, the comment not only shows up at your blog, but it also appears in their news feed. This puts your blog in front of new audience which further adds to the likelihood of you getting a new returning visitor.</p>"
+msgstr ""
+
+#. Found in description list item, faq list item.
+msgid "<p><strong>Higher Conversations</strong>: When you know the person commenting on something, it's more likely that you will also type out your ideas there, unlike the situation when you don't know the person involved in the conversation.</p>"
+msgstr ""
+
+#. Found in description list item, faq list item.
+msgid "<p><strong>Credibility</strong>: In traditional comment form, anyone can put any fake name (Bruce Wayne ..... ;)) to comment on your blog. If the same comment is from the original Facebook account of the person who is commenting, you can give credibility to this user and also the people will automatically trust it.</p>"
+msgstr ""
+
+#. Found in description list item, faq list item.
+msgid "<p><strong>No Spam</strong>: You can get rid off the spammers and users, commenting using their fake accounts.</p>"
+msgstr ""
+
+#. Found in description list item, faq list item.
+msgid "<p><strong>Works for the lazy</strong>: Most people are nowadays lazy. To get these people commenting on your blog, it will just require them to login to their Facebook account (which almost everyone does after powering on computer).</p>"
+msgstr ""
+
+#. Found in description list item.
+msgid "<p><strong>Better Customer Relationship</strong>: User profile data includes user's personal information which can be used to foster customer relationships.</p>"
+msgstr ""
+
+#. Found in description list item.
+msgid "<p><strong>Updated and Genuine Data</strong>: As people update their (real) profile details on their Social network, you get updated and genuine data which is unlikely in case of traditional registration process.</p>"
+msgstr ""
+
+#. Found in description list item.
+msgid "<p><strong>Enhances Marketing Efforts</strong>: Social data can integrate with third-party platforms such as email marketing platforms, ad servers, recommendation engines, and more, to target the right users with the right messages which increases ROI (Return on Investment).</p>"
+msgstr ""
+
+#. Found in description list item.
+msgid "<strong>Free</strong>: Yea, right. It is a free plugin. You need not pay single penny to use the features of this plugin."
+msgstr ""
+
+#. Found in description list item.
+msgid "<strong>No need to register anywhere</strong>: Unlike other third party Social plugins, you do not need to create an account at third party website."
+msgstr ""
+
+#. Found in description list item.
+msgid "<strong>Absolutely Simple</strong>: Plugin configuration is kept dead simple. Screenshots are provided with options wherever required."
+msgstr ""
+
+#. Found in description list item.
+msgid "<strong>Fresh Icon Themes</strong>: Fresh and trendy themes are used for Social Login and Sharing icons."
+msgstr ""
+
+#. Found in description list item.
+msgid "<strong>Optimal Loading time</strong>: Loading time of Social Login and Sharing icons is optimal and if you compare with other plugins, you will find it less than that of all those plugins."
+msgstr ""
+
+#. Found in description list item.
+msgid "We promise to provide <strong>best quality</strong> among other similar plugins. If you find our plugin is lacking some feature, you can email us and we will do our best to include that feature in our plugin as soon as possible."
+msgstr ""
+
+#. Found in description list item.
+msgid "Our <strong>support team is working 24/7</strong> to answer your queries and assist you. You will find us the quickest to respond."
+msgstr ""
+
+#. Found in description list item.
+msgid "Plugin Demo: http://super-socializer-wordpress.heateor.com"
+msgstr ""
+
+#. Found in description list item.
+msgid "Plugin Facebook fan page: https://www.facebook.com/SocializerChamp"
+msgstr ""
+
+#. Found in description list item.
+msgid "Our Facebook Page: https://www.facebook.com/heateor"
+msgstr ""
+
+#. Found in description list item.
+msgid "Our GooglePlus Page: https://plus.google.com/+Heateor"
+msgstr ""
+
+#. Found in description list item.
+msgid "Our Twitter Profile: https://twitter.com/heateor"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "<strong>Spanish, German, French, Hungarian, Italian, Arabic, Russian and Serbo-Croatian translations included</strong>"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Detailed Overview:"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Enables users to login to your website through their existing IDs on popular social networks."
+msgstr ""
+
+#. Found in description paragraph, faq paragraph.
+msgid "<strong>Benefits</strong>"
+msgstr ""
+
+#. Found in description paragraph, faq paragraph.
+msgid "<strong>Rapid signup/login</strong>: When using Social network for login, users do not need to type anything (most of the users are already logged into their social accounts). It helps in boosting signup/login rate at your blog."
+msgstr ""
+
+#. Found in description paragraph, faq paragraph.
+msgid "<strong>Profile Data</strong>: User's profile data will be saved in your blog database. This data also includes users' email, enabling you to communicate with them."
+msgstr ""
+
+#. Found in description paragraph, faq paragraph.
+msgid "<strong>Spam Reduction</strong>: Because social networks authenticate individuals and generally don't allow multiple accounts, the likelihood of false identities and spammers goes down."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Enables users to share your website content over popular sharing networks resulting in increased user traffic."
+msgstr ""
+
+#. Found in description paragraph, faq paragraph.
+msgid "<strong>Increased User Traffic</strong>: When users share content over their Social network, it shows up in front of more people which results in increased user traffic at your website."
+msgstr ""
+
+#. Found in description paragraph, faq paragraph.
+msgid "<strong>SEO Optimization</strong>: Social sharing helps your website content get indexed faster and improves other factors that help in search engine optimization of your blog."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Enables users to comment on your website via their Facebook account."
+msgstr ""
+
+#. Found in description paragraph, faq paragraph.
+msgid "<strong>Virality</strong>: When people comment at your blog using their Facebook account, the comment not only shows up at your blog, but it also appears in their news feed. This puts your blog in front of new audience which further adds to the likelihood of you getting a new returning visitor."
+msgstr ""
+
+#. Found in description paragraph, faq paragraph.
+msgid "<strong>Higher Conversations</strong>: When you know the person commenting on something, it's more likely that you will also type out your ideas there, unlike the situation when you don't know the person involved in the conversation."
+msgstr ""
+
+#. Found in description paragraph, faq paragraph.
+msgid "<strong>Credibility</strong>: In traditional comment form, anyone can put any fake name (Bruce Wayne ..... ;)) to comment on your blog. If the same comment is from the original Facebook account of the person who is commenting, you can give credibility to this user and also the people will automatically trust it."
+msgstr ""
+
+#. Found in description paragraph, faq paragraph.
+msgid "<strong>No Spam</strong>: You can get rid off the spammers and users, commenting using their fake accounts."
+msgstr ""
+
+#. Found in description paragraph, faq paragraph.
+msgid "<strong>Works for the lazy</strong>: Most people are nowadays lazy. To get these people commenting on your blog, it will just require them to login to their Facebook account (which almost everyone does after powering on computer)."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Every time a user logs in, plugin fetches profile data of the user and store that in your WordPress database."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "<strong>Better Customer Relationship</strong>: User profile data includes user's personal information which can be used to foster customer relationships."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "<strong>Updated and Genuine Data</strong>: As people update their (real) profile details on their Social network, you get updated and genuine data which is unlikely in case of traditional registration process."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "<strong>Enhances Marketing Efforts</strong>: Social data can integrate with third-party platforms such as email marketing platforms, ad servers, recommendation engines, and more, to target the right users with the right messages which increases ROI (Return on Investment)."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Enable single sign-on in your WordPress multisite network."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "<a href=\"http://support.heateor.com\">Support Documentation</a> | <a href=\"https://www.heateor.com/social-analytics-sharing\">Social Analytics</a> | <a href=\"https://www.heateor.com/add-ons\">Add-ons</a>"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "You can provide your feedback at hello[at]heateor[dot]com"
+msgstr ""
+
+#. Found in installation header.
+msgid "Installation"
+msgstr ""
+
+#. Found in installation header.
+msgid "Configuration"
+msgstr ""
+
+#. Found in installation header.
+msgid "Widgets and Shortcodes"
+msgstr ""
+
+#. Found in installation header.
+msgid "Display Social Login and Sharing interface on other pages"
+msgstr ""
+
+#. Found in installation list item.
+msgid "Download the plugin from this page"
+msgstr ""
+
+#. Found in installation list item.
+msgid "Navigate to <strong>Plugins</strong> &gt; <strong>Add New</strong> section in your website admin panel"
+msgstr ""
+
+#. Found in installation list item.
+msgid "Click <strong>Upload</strong>, click <strong>Choose file</strong>, upload the plugin zip and click <strong>Install Now</strong> button"
+msgstr ""
+
+#. Found in installation list item.
+msgid "Activate the plugin when installation is complete"
+msgstr ""
+
+#. Found in installation list item.
+msgid "Navigate to the <strong>Widgets</strong> section in the <strong>Appearance</strong> menu."
+msgstr ""
+
+#. Found in installation list item.
+msgid "Look for the <strong>Super Socializer - Login</strong> and <strong>Super Socializer - Sharing</strong> widgets and click/drag these to add the widgets to the desired widget area on the right."
+msgstr ""
+
+#. Found in installation list item.
+msgid "After adding the widget, you can customize it by changing the <strong>Title</strong>, <strong>Before widget content</strong> and <strong>After widget content</strong> options."
+msgstr ""
+
+#. Found in installation paragraph.
+msgid ""
+"After installing and activating the plugin, you will see <strong>Super Socializer</strong> in the left sidebar in your website admin panel.\n"
+"You can configure required options in <strong>Facebook</strong>, <strong>Social Login</strong> and <strong>Social Sharing</strong> sections.\n"
+"There is <strong>help</strong> available with each option. You can see the help text by clicking the <strong>bubble</strong> icon before each option."
+msgstr ""
+
+#. Found in installation paragraph.
+msgid "You can use <strong>[TheChamp-Login]</strong> and <strong>[TheChamp-Sharing]</strong> Shortcodes in the content of required page/post where you want to display Social Login and Sharing interfaces respectively."
+msgstr ""
+
+#. Found in installation paragraph.
+msgid "Optionally, you can use <strong>style</strong> attribute in the Shortcode to style the rendered Social Login and Sharing interfaces."
+msgstr ""
+
+#. Found in installation paragraph.
+msgid "For example"
+msgstr ""
+
+#. Found in installation paragraph.
+msgid "<strong>[TheChamp-Login style=\"background-color:#000; float:right\"]</strong>"
+msgstr ""
+
+#. Found in installation paragraph.
+msgid "You can enable Social Login and Sharing anywhere in your website page/post content using <strong>Shortcodes</strong> mentioned above."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Bugfix] Text was appearing in encoded format in Whatsapp sharing"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Improvement] &lt;div id=\"vk_api_transport\"&gt;&lt;/div&gt; was being added in &lt;head&gt; section on enabling Vkontakte login"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Bugfix] Garbled characters were appearing in Twitter sharing content, on non-English websites in some cases"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Bugfix] Single quote in article title was breaking Twitter sharing functionality"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Bugfix] Twitter sharer was including '+' in place of space in the content being shared in IOS"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Bugfix] Vertical sharing/like buttons interface at homepage was using title of first post on the page instead of that of homepage"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[New] Added option to enable/disable sharing and like buttons at BuddyPress Group page"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[New] Added option to show/hide options for website users to update social avatar at BuddyPress profile page"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[New] Made changes to make plugin compatible with \"Share Analytics\" add-on "
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Bugfix] Horizontal sharing interface was appearing aligned vertically in some cases"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Improvement] Updated GooglePlus logo"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[New] Added option in Social Commenting to specify the HTML ID of container element of default comment form"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Bugfix] Users were getting redirected to 404 page after email verification in few cases"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Bugfix] Whatsapp sharing was not working on some versions of IOS"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Bugfix] \"Send username-password to user after Social Login\" functionality was not working with WP version 4.3 and above"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Bugfix] \"Stick sharing bar horizontally at bottom on mobile devices\" option was not working for widget and shortcode"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Bugfix] Total share counts were being displayed in Italic font in few scenarios"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[New] Added option to disable user registration through Social Login"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Improvement] Minor performance improvements"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Improvement] Improved Italian Translation"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Bugfix] Facebook Comments Email Notifications were working only for first comment when posted multiple comments without refreshing the page"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[New] Added options to enable/disable Social Commenting at default (post, page) and custom post types"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[New] Added option to enable/disable sticky horizontal Social Sharing bar at bottom of page on mobile devices"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[New] Included Russian translation"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[New] Removed upper limit from size of sharing icons"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[New] Added filter 'the_champ_before_user_registration' before user registration functionality"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Bugfix] Social Login icons were not appearing at WooCommerce Checkout page"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Bugfix] Facebook Like and Recommend buttons were not appearing consistently"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Bugfix] Social Login shortcode was displaying title for logged in users too"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Bugfix] Facebook Login was not working in Chrome on IOS"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Improvement] Widget code has been updated to use php5 style constructors "
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Improvement] WooCommerce shipping and billing details are now synced with social profile data "
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Improvement] Sharing icons got sexier "
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Improvement] If social profile data has username, it is being used as is for WordPress username"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Bugfix] Yummly and Buffer sharing were not working"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[New] Added options to enable sharing, like buttons on custom posts and WooCommerce products"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[New] Added option to enable social login at customer login form at WooCommerce My Account page"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[New] Included shortcode for Social Account Linking [TheChamp-Social-Linking]"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[New] Added Yummly and Buffer to sharing and like buttons"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[New] Added option to show total shares with sharing icons"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[New] Option to hide/show vertical sharing/like buttons interface on mobile devices"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[New] Added option to update social avatar at user profile page"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[New] Added option to prevent modernizr JS from loading"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[New] Included \"title\" attribute in shortcodes"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[New] Included Arabic Translation"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[New] Included Serbo-Croatian Translation"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Improvement] Improved Print icon in sharing"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Improvement] Increased space between like buttons"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Improvement] Escaped output of add_query_arg and remove_query_arg functions "
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Improvement] Increased font size of share counts in vertical sharing bar "
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Bugfix] Tweet button was showing encoded characters for some content"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Bugfix] Support documentation links were redirecting to 404, \"not found\" page in websites with ssl enabled"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Bugfix] Facebook Commenting interface was shrinked on mobile devices due to recent changes introduced in FB JS SDK by Facebook"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Bugfix] Facebook Login was unable to fetch email and some other profile data of user due to recent changes introduced in FB JS SDK by Facebook"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Improvement] Updated FB JS SDK to latest version 2.4"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Improvement] Improved sharing/login icons for Twitter, GooglePlus, Stumbleupon, Pinterest, Email and Digg"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Bugfix] Overlapped, messy sharing and login icons in a few cases"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Bugfix] Admin was unable to disable sharing/like buttons at homepage set as static page"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Bugfix] Starting share counts were not working for homepage set as static page"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Bugfix] Rearrange sharing icons functionality was not working in a few cases"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Bugfix] WordPress Comments tab in Social Commenting interface was displaying incorrect comment counts in a few cases"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Improvement] Optimized loading of Social Commenting"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Improvement] Improved LinkedIn sharing"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Bugfix] Some commenting tabs were not visible if there was space in \"Order of tabs in commenting interface\" option in Social Commenting section"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Bugfix] Modernizr Javascript was breaking functionality of some themes if included in footer"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Bugfix] Double Social Login icons at front-end with a few themes"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Bugfix] Sharing icons were not visible in \"Rearrange icons\" option in admin panel in a few cases"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Bugfix] Fixed issues with sharing and like buttons (Social Counter) shortcodes/widgets"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Bugfix] Facebook comemnts in new commenting interface were not visible in Firefox browser"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Bugfix] Double sharing icons were appearing at front-end"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Bugfix] Sharing icons were not being displayed in admin and front-end, with some themes, on updating the plugin"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Bugfix] Social Commenting was breaking layout of some themes"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Improved Social Sharing icons"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Two themes for sharing icons (round and square)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Option to change size of sharing icons (ranging between 16x16px and 35x35px) "
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Option to disable/enable \"More\" icon in sharing"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Improved Social Login icons"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Feature to slide in/out vertical sharing/counter interface"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Option to use already enabled shortlinks with sharing"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "GooglePlus and Disqus included in Social Commenting"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Bugfix] Cached short urls were not being removed on deletion of plugin"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Bugfix] Facebook Comments layout was distorted in mobile devices"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated Facebook SDK to latest version"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added action \"the_champ_login_widget_hook\" in Social Login widget before logout link"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Bugfix] Xing login was not working"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Bugfix] Google Login was not working with French translation"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Bugfix] Bit.ly service was being called on each page load. Now short urls are being cached."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Bugfix] Names having cyrillic characters were not being displayed"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Bugfix] Could not FB comment using mobile, interface kept refreshing"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Bugfix] \"fb-root\" div was being included in the 'head' section of webpage"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Bugfix] FB Commenting was not working with Disqus commenting"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Bugfix] Bitly url shortener was not working in sharing shortcode"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Bugfix] Removed {} (empty brackets) from front.css file"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Bugfix] Commenting.js file was being loaded on the page where FB commenting was disabled"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Included Whatsapp in sharing"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Included option to enable only Facebook Commenting without enabling default comment form"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Removed Facebook feed feature"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Included 'Archives' in 'Sharing Location' option"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Included filter 'the_champ_login_interface_filter' in 'inc/social_login.php' file to use custom icons for Social Login "
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Included filter 'the_champ_ajax_response_filter' in helper.php file to alter AJAX responses"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Included action 'the_champ_hook_update_profile_data' in 'inc/social_login.php' to update profile data"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Included an option to enable/disable social account linking at BuddyPress profile page"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Now fuctionality does not rely on 'wp_footer' hook to include Javascript files in footer of the webpage"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "CSS improvements"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Removed credit links"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Bugfix] Fixed issue with Xing Social Login"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Bugfix] Translation was broken"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Included Xing in Social Login"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Included Xing in Social Sharing"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Included Xing in Social Counter"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added option to specify target url in sharing and counter"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added option to specify minimum share count in sharing interface for individual pages/posts"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Users can link their social accounts at profile page"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added option to redirect users to BuddyPress profile page after login and registration"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added option to left, right and center align horizontal sharing and counter interface"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added option to specify social avatar quality"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added options to enable sharing at BBPress forums, topics, replies and BuddyPress activity"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Social Login app configuration steps simplified"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Improved Print icon in sharing"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Vkontakte share counts now supported"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Included shortcode for Facebook Commenting"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added option to disable Facebook Comments on individual page/post"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added option to specify language for Social Counters"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Included Stumbleupon badge in Social Counters"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Included functionality to comment after clicking Facebook like/recommend"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Included option to enable share counts in sharing shortcode and widget"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Included French, Hungarian, German and Italian translation"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Facebook Comments and default commenting works simultaneously without the need to toggle between them"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Bugfix] Share counts were not being displayed when bit.ly url shortner was enabled"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Verified compatibility with WordPress 4.0"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "[Bugfix] Fatal error at \"Social Counter\" page in admin panel"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated screenshots in Social Counter section in admin panel"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Minor CSS changes"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added Social Counters (Facebook like, Twitter Tweet, Google +1 etc)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated StumbleUpon sharing icon"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added FAQ section at \"Social Sharing\" page"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added hook \"do_action('the_champ_user_successfully_created', $userId, $userdata)\" after user creation"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added hook \"apply_filters('the_champ_bypass_sharing', $post, $content)\" before rendering sharing interface"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added option to specify background color of the vertical sharing bar"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added option to use bit.ly url shortening sevice in sharing"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added option to specify username in Twitter sharing"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bugfix: If used any other language than English in the FB comment title, undefined characters were being displayed at front end"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Facebook commenting is now responsive"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Sharing interfaces are now responsive"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Switching between Facebook and traditional commenting is smoother"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Customizable text on buttons to switch commenting modes"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Option to align floating sharing interface left/right"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "JS and CSS files minified"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bugfix: When one logged in using Twitter from login page, it was redirected back to login page"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bugfix: WordPress usernames created from social profile of the users were in lowercase"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bugfix: Google+ icon was showing up twice in Vertical sharing provider selection"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bugfix: Vertical sharing bar is not appearing if left offset is less than 200"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Included floating sharing bar"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Included option to enable sharing on category archive pages"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Included option to hide/show sharing counts"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Included option to auto-approve comments made by social login users"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Included option to specify the messgae on \"email required\" popup"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Enabled share counts for Google+"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Included option to delete options on plugin deletion"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Included Spanish language translation"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Minor bug fixes"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bug fix: Continuous loading icon after Social Login"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bug fix: Google Social Login icon was not responding"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Enhanced Social Sharing to support 80 sharing services, including Pinterest"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Improved user experience and user interface in Social Sharing"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Sharing icons display number of shares"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Included Instagram in Social Login"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Optimized loading time of Social Sharing and Login interface"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Facebook commenting and WordPress commenting can be used simultaneously (website users can switch between the two) "
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed the issue with Twitter login redirection"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added option to control redirection after user registration"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Performance improvements"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Included Vkontakte in Social Sharing and Social Login"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added option to disable sharing at particular post/page"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added option to specify language in Facebook comments "
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed the bug due to redeclaration of Twitter OAuth class"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Minor bug fix in Facebook feed functionality"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Initial release of the plugin"
+msgstr ""
+
+#. Found in faq header.
+msgid "What is this Social Login stuff and why would I need it?"
+msgstr ""
+
+#. Found in faq header.
+msgid "What is Social Commenting and why would I need it?"
+msgstr ""
+
+#. Found in faq header.
+msgid "What is Social Sharing and why would I need it?"
+msgstr ""
+
+#. Found in faq header.
+msgid "How much do you charge for the plugin?"
+msgstr ""
+
+#. Found in faq header.
+msgid "Can you help me set up the plugin at my website?"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Social Login enables your website users to login using their existing accounts on Social networks like Facebook, Twitter, LinkedIn, Google plus etc."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Social commenting enables your website users to comment at your blog using their existing accounts on Social networks."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Social Sharing enables your website users to share your website content over their social network."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "This plugin is FREE to download and feel free to use it on your WordPress, BuddyPress, BBPress and any other WP based systems. For advanced features and custom solutions, drop an email at support@heateor.com"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Yes, we can help you with it. Just drop an email at support@heateor.com"
+msgstr ""

@@ -1,0 +1,1 @@
+<div class="content-details" id="post-<?php the_ID(); ?>">    <h5><?php echo get_field('excerpt'); ?></h5>    <?php 			the_content();						wp_link_pages( array(				'before' => '<div class="page-links">' . __( 'Pages:', 'zerif-lite' ),				'after'  => '</div>',			) );		?></div><?php edit_post_link( __( 'Edit', 'zerif-lite' ), '<span class="edit-link">', '</span>' ); ?>
