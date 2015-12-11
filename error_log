@@ -1,0 +1,1 @@
+﻿[04-Dec-2015 10:40:32 UTC] Cơ sở dữ liệu của WordPress gặp lỗi Duplicate entry '2015-12-05' for key 'unique_date' với truy vấn INSERT INTO wp_statistics_visit (last_visit, last_counter, visit) VALUES ( '', '2015-12-05', 0) yêu cầu bởi do_action_ref_array, call_user_func_array, wp_statistics_add_visit_event
