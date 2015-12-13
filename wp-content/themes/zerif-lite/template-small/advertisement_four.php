@@ -1,6 +1,60 @@
 <?php
-    $list_four_id = array();
-	// get list id heath_care 
+$list_four_id = array();
+$category_adv = get_the_category();
+$slug = $category_adv[0]->slug;
+if(is_archive()){
+  $taget = '';
+  switch ($slug) {
+    case 'seasons-promotion':
+        $taget = 'seasons_promotion';
+        break;
+    case 'taste-event':
+        $taget = 'taste_event';
+        break;
+    case 'home-electronics':
+        $taget = 'home_electronics';
+        break;
+    case 'real-estate-source':
+        $taget = 'real_estate_source';
+        break;
+    case 'vehicle-technology':
+        $taget = 'vehicle_technology';
+        break;
+    case 'fashion-health':
+        $taget = 'fashion_health';
+        break;
+    default:
+        break;
+  }
+  // get list id heath_care 
+    $four_heath_care_args = array (					 
+		'post_status'    => 'publish',		
+		'order'          => 'DESC',
+		'orderby'        => 'date',
+        'post_type'      => 'post',
+        'category_name'  => 'advertisement',
+        'meta_query'     => array(
+            array(
+                'key'		 => 'highlight',
+                'value'      => true,
+            ),
+            array(
+                'key'		 => 'group_advertisement',
+                'value'      => $taget
+            ),
+        ),
+        'posts_per_page' => 4,
+	);
+    $four_heath_care_the_query = new WP_Query( $four_heath_care_args ); 
+    if($four_heath_care_the_query->have_posts()){
+        while ($four_heath_care_the_query->have_posts()){
+            $four_heath_care_the_query->the_post();
+            array_push($list_four_id, get_the_ID());
+        }
+    }
+    wp_reset_postdata();
+}else{
+  // get list id heath_care 
     $four_heath_care_args = array (					 
 		'post_status'    => 'publish',		
 		'order'          => 'DESC',
@@ -167,7 +221,7 @@
         }
     }
     wp_reset_postdata();
-    
+}
     $four_args = array (					 
 		'post_status'    => 'publish',		
 		'order'          => 'DESC',
@@ -200,7 +254,7 @@
             </figure>
         </div>
     </div>
-    <?php }?>        
+    <?php }?>
 </div>
 <?php endif; ?>
 <?php wp_reset_postdata();?>

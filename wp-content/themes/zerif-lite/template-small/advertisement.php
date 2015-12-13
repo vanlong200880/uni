@@ -1,6 +1,61 @@
 <?php
-    $list_id = array();
+$category_adv = get_the_category();
+$slug = $category_adv[0]->slug;
+$list_id = array();
+if(is_archive()){
+  $taget = '';
+  switch ($slug) {
+    case 'seasons-promotion':
+        $taget = 'seasons_promotion';
+        break;
+    case 'taste-event':
+        $taget = 'taste_event';
+        break;
+    case 'home-electronics':
+        $taget = 'home_electronics';
+        break;
+    case 'real-estate-source':
+        $taget = 'real_estate_source';
+        break;
+    case 'vehicle-technology':
+        $taget = 'vehicle_technology';
+        break;
+    case 'fashion-health':
+        $taget = 'fashion_health';
+        break;
+    default:
+        break;
+  }
+  
 	// get list id heath_care 
+    $heath_care_args = array (					 
+		'post_status'    => 'publish',		
+		'order'          => 'DESC',
+		'orderby'        => 'date',
+        'post_type'      => 'post',
+        'category_name'  => 'advertisement',
+        'meta_query'     => array(
+            array(
+                'key'		 => 'active',
+                'value'      => true,
+            ),
+            array(
+                'key'		 => 'group_advertisement',
+                'value'      => $taget
+            ),
+        ),
+        'posts_per_page' => 5,
+	);
+    $heath_care_the_query = new WP_Query( $heath_care_args ); 
+    if($heath_care_the_query->have_posts()){
+        while ($heath_care_the_query->have_posts()){
+            $heath_care_the_query->the_post();
+            array_push($list_id, get_the_ID());
+        }
+    }
+    
+}else{
+  	// get list id heath_care 
     $heath_care_args = array (					 
 		'post_status'    => 'publish',		
 		'order'          => 'DESC',
@@ -168,9 +223,9 @@
         }
     }
     wp_reset_postdata();
-    
+}
     $args = array (					 
-		'post_status'    => 'publish',		
+		'post_status'    => 'publish',
 		'order'          => 'DESC',
 		'orderby'        => 'rand',
         'post_type'      => 'post',
@@ -198,13 +253,6 @@
                     }
                 ?>
                 </a>
-                <!-- <figcaption>
-                    <p><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></p>
-                    <p>
-                        
-                        <a href="<?php echo $website[0]; ?>" target="_blank"><?php echo $website[0]; ?></a>
-                    </p>
-                </figcaption> -->
             </figure>
         </div>
         <?php }?>

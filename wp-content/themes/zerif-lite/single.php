@@ -34,7 +34,7 @@ $category = get_the_category($post->ID);
 				<div class="row">
 					<div class="col-md-12">
 						<?php while ( have_posts() ) : the_post(); 
-							the_content();
+							//the_content();
 						endwhile; // end of the loop. ?>
 					</div>
 				</div>
