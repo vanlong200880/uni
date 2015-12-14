@@ -54,13 +54,11 @@ endif;
 <div id="wrapper">
     <header id="header">
         <div class="top-header">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="menu-top">
-                  <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse navbar-ex1-collapse">
-                    <!-- <img src="<?php echo get_template_directory_uri(); ?>/images/sale.png"> -->
+                <div class="menu-top navigation">
+                    <nav class="navbar navbar-default">
+											<div class="container">
+												<div class="row">
+													<div class="col-md-12">
                         <?php
                             wp_nav_menu( array(
                                 'theme_location' => 'primary',
@@ -71,28 +69,28 @@ endif;
                         ?>
 
                         <?php get_search_form(); ?>
-
-                    </div><!-- /.navbar-collapse -->
-                </div>
-              </div>
-            </div>
+												</div>
+												</div>
+											</div>
+                    </nav><!-- /.navbar-collapse -->
             
             
-            <div class="row">
-              <div class="col-md-2 col-sm-2">
-                  <?php
-                      echo '<a href="'.esc_url( home_url( '/' ) ).'">';
-                          echo '<img src="'.get_template_directory_uri().'/images/logo.png" alt="'.get_bloginfo('title').'">';
-                      echo '</a>';
-                  ?>
-              </div>
-              <div class="col-md-10 col-sm-10 col-xs-12">
-                <div class="adv-top">
-                  quang cao
-                </div>
-              </div>
-          </div>
-
+										<div class="container">
+											<div class="row">
+													<div class="col-md-2 col-sm-2">
+															<?php
+																	echo '<a href="'.esc_url( home_url( '/' ) ).'">';
+																			echo '<img src="'.get_template_directory_uri().'/images/logo.png" alt="'.get_bloginfo('title').'">';
+																	echo '</a>';
+															?>
+													</div>
+													<div class="col-md-10 col-sm-10 col-xs-12">
+														<div class="adv-top">
+															quang cao
+														</div>
+													</div>
+											</div>
+										</div>
           </div>
         </div>
     </header>
