@@ -2,7 +2,7 @@
 <?php global $language; ?>
 <h2><?php echo ($language == 'vi')? 'Danh mục': 'Categories'; ?><span></span></h2>
 <ul class="menu-left">
-	
+	<li class="page-24h"><a href="<?php echo get_site_url() ?>/<?php echo $language ?>">24h</a></li>
 <?php
  $categories = get_terms( 'category', array(
 // 	'orderby'    => 'count',
