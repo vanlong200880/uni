@@ -1,7 +1,8 @@
 
 /*--top header for unimedia services--*/
 #header .top-header{
-  margin: 4px 0 5px;
+  margin: 0px 0 15px;
+  border-bottom: 1px solid #d5d5d5;
 }
 #header .top-header img{
   width: 140px;
@@ -85,22 +86,21 @@
 #header .navigation nav.navbar-default {
   background-color: #E30513;
   border-color: none;
-  height: 40px;
+  height: 30px;
 }
 #header .navigation nav.navbar{
   border-radius: 0;
 }
 #header .navigation .navbar{
-  min-height: 40px !important;
+  min-height: 30px !important;
   border: none;
+  margin-bottom: 5px;
 }
 #header .navigation nav.navbar-default .navbar-nav>li>a {
     color: #fff;
-    text-transform: uppercase;
-    font-size: 13px;
-    font-weight: bold;
-    padding-top: 10px;
-    padding-bottom: 12px;
+    font-size: 14px;
+    padding-top: 5px;
+    /*padding-bottom: 12px;*/
     line-height: inherit;
 }
 #header .navigation nav.navbar-default .navbar-nav>.active>a, 
@@ -116,23 +116,23 @@
   border: none;
   border-radius: 0;
   box-shadow: none;
-  height: 28px;
+  height: 22px;
   padding: 3px 12px;
-  font-size: 12px;
+  font-size: 11px;
 }
 #header .navigation nav.navbar-default .navbar-form{
-  margin-top: 5px;
-  margin-bottom: 6px;
+  margin-top: 4px;
+  margin-bottom: 0px;
   position: relative;
 }
 .language{
   position:  absolute;
-  right: -115px;
-  top: 1px;
+  right: -50px;
+  top: 3px;
 }
 .language a{
-  height: 28px;
-  width: 50px;
+  height: 17px;
+  width: 25px;
   float: left;
   margin-left: 5px;
   background: #FFF;
@@ -144,7 +144,7 @@
   background: url('../images/en.png') no-repeat center;
 }
 #header .navbar-right{
-  margin-right: 115px;
+  margin-right: 50px;
 }
 
 
@@ -195,10 +195,6 @@
    50% { color: #292663;  } 
    100% { color: #FFF;  }  
  } 
-
-
-
-
 #header .navigation nav.navbar-default .navbar-form .form-group select{
   max-width: 125px;
 }
@@ -206,12 +202,116 @@
   background-color: #2A255C;
   border-radius: 0;
   border: 1px solid #2A255C;
-  padding: 4px 12px;
+  padding: 0px 12px;
 }
 #header .navigation nav.navbar-default .navbar-form i{
   color: #fff;
 }
-
+/*--top adv--*/
+#header .top-header .adv-top img{
+  width: 945px;
+  height: 80px;
+}
+/*--category-menu-left--*/
+.category-menu-left h2{
+  background: #6f6f6e;
+  font-size: 20px;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  margin-bottom: 0;
+  padding-left: 10px;
+}
+.category-menu-left ul{
+  background: #f2f2f2;
+}
+.category-menu-left ul li{
+  border-bottom: 1px solid #d5d5d5;
+  height: 41px;
+  line-height: 41px;
+}
+.category-menu-left ul li a{
+  padding-left: 20px;
+  color: #000;
+  position: relative;
+  z-index: 9;
+}
+.category-menu-left ul li.unideal a:after,
+.category-menu-left ul li.page24 a:before,
+.category-menu-left ul li.vehicle-technology a:before,
+.category-menu-left ul li.fashion-health a:before,
+.category-menu-left ul li.real-estate-source a:before,
+.category-menu-left ul li.home-electronics a:before,
+.category-menu-left ul li.taste-event a:before,
+.category-menu-left ul li.seasons-promotion a:before{
+  content: " ";
+  position: absolute;
+  width: 5px;
+  height: 41px;
+  display: block;
+  left: 0;
+  overflow: hidden;
+  -webkit-transition: width 0.2s;
+  -moz-transition: width 0.2s;
+  -ms-transition: width 0.2s;
+  -o-transition: width 0.2s;
+  transition: width 0.2s;
+  z-index: 1;
+}
+.category-menu-left ul li.unideal:hover a:after{
+  content: " ";
+  display: block;
+  background-color: #1abc9c;
+  width: 276px;
+  color: #fff;
+  -webkit-transition: width 0.2s;
+  -moz-transition: width 0.2s;
+  -ms-transition: width 0.2s;
+  -o-transition: width 0.2s;
+  transition: width 0.2s;
+  z-index: 9999999;
+}
+/*.category-menu-left ul li.unideal:hover a:before{
+  background-color: #1abc9c;
+  z-index: 999;
+  color: #fff;
+}*/
+.category-menu-left ul li.unideal a:after{ 
+  background-color: #1abc9c;
+}
+.category-menu-left ul li.page24 a:before{ 
+  background-color: #c9302c;
+}
+.category-menu-left ul li.vehicle-technology a:before{ 
+  background-color: #34495d;
+}
+.category-menu-left ul li.fashion-health a:before{
+  background-color: #95c11e;
+}
+.category-menu-left ul li.real-estate-source a:before{
+  background-color: #302683;
+}
+.category-menu-left ul li.home-electronics a:before{
+  background-color: #009bb4;
+}
+.category-menu-left ul li.taste-event a:before{
+  background-color: #f39200;
+}
+.category-menu-left ul li.seasons-promotion a:before{
+  background-color: #c51a1b;
+}
+.category-menu-left ul li span.icon-17,
+.category-menu-left ul li span.icon-7,
+.category-menu-left ul li span.icon-13,
+.category-menu-left ul li span.icon-15,
+.category-menu-left ul li span.icon-14,
+.category-menu-left ul li span.icon-6{
+  font-size: 30px;
+  position: relative;
+  display: block;
+  color: #575756;
+}
 /*--new advertising--*/
 #wrap-new-adv .big-new-adv ul.unimedia-services{
   position: absolute;
