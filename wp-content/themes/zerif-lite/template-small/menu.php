@@ -16,7 +16,7 @@
  foreach ($categories as $value){
    if(!in_array($value->slug, $arr))
    { ?>
-  <li><span class="icon-<?php echo $value->term_id ?>"></span><a href="<?php echo get_term_link($value) ?>"><?php echo $value->name; ?></a></li>
+  <li class="color-item-<?php echo $value->term_id ?> <?php echo $value->slug ?> "><span class="icon-<?php echo $value->term_id ?>"></span><a href="<?php echo get_term_link($value) ?>"><?php echo $value->name; ?></a></li>
 <?php 
    }
  }
