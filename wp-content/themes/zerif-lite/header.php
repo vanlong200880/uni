@@ -86,7 +86,7 @@ endif;
 													</div>
 													<div class="col-md-10 col-sm-10 col-xs-12">
 														<div class="adv-top">
-															quang cao
+															<?php get_template_part('template-small/adv_top'); ?>
 														</div>
 													</div>
 											</div>
