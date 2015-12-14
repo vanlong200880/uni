@@ -43,7 +43,7 @@ if(is_archive()){
                 'value'      => $taget
             ),
         ),
-        'posts_per_page' => 4,
+        'posts_per_page' => 8,
 	);
     $four_heath_care_the_query = new WP_Query( $four_heath_care_args ); 
     if($four_heath_care_the_query->have_posts()){
@@ -71,7 +71,7 @@ if(is_archive()){
                 'value'      => 'fashion_health'
             ),
         ),
-        'posts_per_page' => 4,
+        'posts_per_page' => 8,
 	);
     $four_heath_care_the_query = new WP_Query( $four_heath_care_args ); 
     if($four_heath_care_the_query->have_posts()){
@@ -99,7 +99,7 @@ if(is_archive()){
                 'value'      => 'taste_event'
             ),
         ),
-        'posts_per_page' => 4,
+        'posts_per_page' => 8,
 	);
     $four_taste_event_the_query = new WP_Query( $four_taste_event_args ); 
     if($four_taste_event_the_query->have_posts()){
@@ -127,7 +127,7 @@ if(is_archive()){
                 'value'      => 'real_estate_source'
             ),
         ),
-        'posts_per_page' => 4,
+        'posts_per_page' => 8,
 	);
     $four_real_estate_source_the_query = new WP_Query( $four_real_estate_source_args ); 
     if($four_real_estate_source_the_query->have_posts()){
@@ -155,7 +155,7 @@ if(is_archive()){
                 'value'     => 'home_electronics'
             ),
         ),
-        'posts_per_page' => 4,
+        'posts_per_page' => 8,
 	);
     $four_trevel_education_the_query = new WP_Query( $four_trevel_education_args ); 
     if($four_trevel_education_the_query->have_posts()){
@@ -183,7 +183,7 @@ if(is_archive()){
                 'value'     => 'vehicle_technology'
             ),
         ),
-        'posts_per_page' => 4,
+        'posts_per_page' => 8,
 	);
     $four_trevel_education_the_query = new WP_Query( $four_trevel_education_args ); 
     if($four_trevel_education_the_query->have_posts()){
@@ -211,7 +211,7 @@ if(is_archive()){
                 'value'      => 'seasons_promotion'
             ),
         ),
-        'posts_per_page' => 4,
+        'posts_per_page' => 8,
 	);
     $four_seasion_promotion_the_query = new WP_Query( $four_seasion_promotion_args ); 
     if($four_seasion_promotion_the_query->have_posts()){
@@ -229,12 +229,13 @@ if(is_archive()){
         'post_type'      => 'post',
         'category_name'  => 'advertisement',
         'post__in' => $list_four_id,
-        'posts_per_page' => 4,
+        'posts_per_page' => 8,
 	);
     $four_adv_the_query = new WP_Query( $four_args );
     ?>	  
 <?php if($four_adv_the_query -> have_posts()): ?>
 <div class="top-sub-adv">
+	<div class="row">
     <?php while ($four_adv_the_query->have_posts()) {  $four_adv_the_query->the_post();?>
     <div class="col-md-6 col-sm-6 col-xs-6 mg-20">
         <div class="show-adv">
@@ -255,6 +256,7 @@ if(is_archive()){
         </div>
     </div>
     <?php }?>
+	</div>
 </div>
 <?php endif; ?>
 <?php wp_reset_postdata();?>
