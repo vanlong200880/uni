@@ -1,3 +1,4 @@
+<div class="category-menu-left">
 <?php global $language; ?>
 <h2><?php echo ($language == 'vi')? 'Danh mục': 'Categories'; ?><span></span></h2>
 <ul class="menu-left">
@@ -22,3 +23,4 @@
   
 </ul>
 
+</div>
