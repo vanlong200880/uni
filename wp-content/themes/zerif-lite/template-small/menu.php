@@ -2,6 +2,7 @@
 <?php global $language; ?>
 <h2><?php echo ($language == 'vi')? 'Danh mục': 'Categories'; ?><span></span></h2>
 <ul class="menu-left">
+	
 <?php
  $categories = get_terms( 'category', array(
 // 	'orderby'    => 'count',
@@ -15,7 +16,7 @@
  foreach ($categories as $value){
    if(!in_array($value->slug, $arr))
    { ?>
-  <li><a href="<?php echo get_term_link($value) ?>"><?php echo $value->name; ?></a></li>
+  <li><span class="icon-<?php echo $value->term_id ?>"></span><a href="<?php echo get_term_link($value) ?>"><?php echo $value->name; ?></a></li>
 <?php 
    }
  }
