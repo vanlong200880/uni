@@ -214,9 +214,9 @@ best choice for all companies to bring products & services to millions of custom
 	<?php if(wpmd_is_notdevice()): ?>
 	<script type="text/javascript">
 		$(document).ready(function() {
-			var headerOffset = $('#header').offset().top;
+			var headerOffset = $('.navigation nav.navbar').offset().top;
 			$(window).scroll(function(){
-				var header = $('#header'),
+				var header = $('.navigation nav.navbar'),
 					scroll = $(window).scrollTop();
 				if (scroll > headerOffset){ 
 					header.addClass('fixed');

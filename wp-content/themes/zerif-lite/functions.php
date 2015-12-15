@@ -322,6 +322,7 @@ function zerif_scripts() {
     
     wp_enqueue_style('zerif_bootstrap_style', get_template_directory_uri() . '/css/bootstrap.min.css');
     wp_enqueue_style('main', get_template_directory_uri() . '/css/main.css');
+    wp_enqueue_style('mCustomScrollbar', get_template_directory_uri() . '/css/jquery.mCustomScrollbar.css');
     wp_enqueue_style('style', get_template_directory_uri() . '/css/style.css');
     wp_enqueue_style('font_icon_style', get_template_directory_uri() . '/css/font-icon.css');
 	wp_enqueue_style('carousel_style', get_template_directory_uri() . '/css/owl.carousel.css');
@@ -349,6 +350,7 @@ function zerif_scripts() {
     wp_enqueue_script('jquery_script', get_template_directory_uri() . '/js/jquery.js', array(), '20120206', true);
     wp_enqueue_script('zerif_bootstrap_script', get_template_directory_uri() . '/js/bootstrap.min.js', array(), '20120207', true);
     wp_enqueue_script('jquery_script_owl', get_template_directory_uri() . '/js/owl.carousel.js', array(), '20120207', true);
+    wp_enqueue_script('jquery_mCustomScrollbar', get_template_directory_uri() . '/js/jquery.mCustomScrollbar.js', array(), '20120207', true);
 	wp_enqueue_script('jquery_script_common', get_template_directory_uri() . '/js/common.js', array(), '201202010', true);
     /* Knob script */
     //wp_enqueue_script('zerif_knob_nav', get_template_directory_uri() . '/js/jquery.knob.js', array("jquery"), '20120206', true);

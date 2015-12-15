@@ -2,6 +2,7 @@
 /*--top header for unimedia services--*/
 #header .top-header{
   margin: 0px 0 15px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #d5d5d5;
 }
 #header .top-header img{
@@ -225,6 +226,7 @@
 }
 .category-menu-left ul{
   background: #f2f2f2;
+  height: 330px;
 }
 .category-menu-left ul li{
   border-bottom: 1px solid #d5d5d5;
@@ -315,6 +317,30 @@
   position: relative;
   display: block;
   color: #575756;
+}
+/*-fix scroll menu--*/
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger:focus .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+#mCSB_1_dragger_vertical{
+  width: 8px;
+  background-color: #666 !important;
+  border-radius: 20px !important;
+  -webkit-transition:none;
+  -moz-transition:none;
+  -o-transition:none;
+  +transition:none;
+}
+.mCSB_inside > .mCSB_container{
+  margin-right: 8px;
+}
+.mCSB_scrollTools{
+  width: 8px;
+}
+#mCSB_1_dragger_vertical{
+  height: 80px !important;
 }
 /*--new advertising--*/
 #wrap-new-adv .big-new-adv ul.unimedia-services{
@@ -738,6 +764,9 @@
 #wrapp-details .wrapp-breadcrumb .breadcrumb{
   background-color: #efefef;
 }
+.article-all .wrapp-categories .show-article img{
+  height: 195px;
+}
 /*#real-estate.article-all .show-article,
 .article-all .wrapp-categories .show-article{
   min-height: 352px;
@@ -756,7 +785,7 @@ body.category-unideal .article-all .wrapp-categories .show-article{
 }
 .top-sub-featured .show-article figure figcaption a{
 	font-size: 12px;
-	margin-bottom: 0;
+	margin-bottom: 10px;
 }
 
 #wrapp-details .show-details img{
@@ -888,18 +917,18 @@ body.category-unideal .wrapp-categories .show-article p{
 	display: block;
 	width: 100%;
 }
-header.fixed{
-    position: fixed;
-    width: 100%;
-    z-index: 99999;
-	top: -100px;
-    margin-top: 100px;
+.navigation nav.navbar.fixed{
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
+	top: -30px;
+  margin-top: 30px;
 	transition: margin-top 0.8s;
-    -moz-transition: margin-top 0.8s;
-    -webkit-transition: margin-top 0.8s;
-    -ms-transition: margin-top 0.8s;
-    -o-transition: margin-top 0.8s;
-	background: #ECECEC;
+  -moz-transition: margin-top 0.8s;
+  -webkit-transition: margin-top 0.8s;
+  -ms-transition: margin-top 0.8s;
+  -o-transition: margin-top 0.8s;
+	/*background: #ECECEC;*/
 }
 #header.fixed .navigation nav.navbar{
 	margin-bottom: 0;
