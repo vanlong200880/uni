@@ -138,7 +138,6 @@ $vihicle_technology_args = array (
                             ?>
                         </p>
                         <div class="readmore">
-                            <span class="left"></span>
                             <a href="<?php the_permalink() ?>"><?php echo ($language == 'vi')? 'Đọc thêm':'read more' ?> <span class="arrow">&rsaquo;&rsaquo;</span></a>
                         </div>
                     </figcaption>
@@ -220,7 +219,6 @@ $vihicle_technology_args = array (
 								<?php endif; ?>
 								
 								<div class="readmore">
-									<span class="left"></span>
 									<a href="<?php the_permalink() ?>"><?php echo ($language == 'vi')? 'Đọc thêm':'read more' ?> <span class="arrow">&rsaquo;&rsaquo;</span></a>
 								</div>
 							</figcaption>

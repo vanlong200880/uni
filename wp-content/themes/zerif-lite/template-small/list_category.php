@@ -58,7 +58,6 @@ $fashion_health_args = array (
                             ?>
                         </p>
                         <div class="readmore">
-                            <span class="left"></span>
                             <a href="<?php the_permalink() ?>"><?php echo ($language == 'vi')? 'Đọc thêm':'read more' ?> <span class="arrow">&rsaquo;&rsaquo;</span></a>
                         </div>
                     </figcaption>
@@ -157,7 +156,6 @@ $taste_event_args = array (
                             ?>
                         </p>
                         <div class="readmore">
-                            <span class="left"></span>
                             <a href="<?php the_permalink() ?>"><?php echo ($language == 'vi')? 'Đọc thêm':'read more' ?> <span class="arrow">&rsaquo;&rsaquo;</span></a>
                         </div>
                     </figcaption>
@@ -258,7 +256,6 @@ $real_estate_source_args = array (
                             ?>
                         </p>
                         <div class="readmore">
-                            <span class="left"></span>
                             <a href="<?php the_permalink() ?>"><?php echo ($language == 'vi')? 'Đọc thêm':'read more' ?><span class="arrow">&rsaquo;&rsaquo;</span></a>
                         </div>
                     </figcaption>
@@ -332,7 +329,6 @@ $home_electronics_args = array (
                             ?>
                         </p>
                         <div class="readmore">
-                            <span class="left"></span>
                             <a href="<?php the_permalink() ?>"><?php echo ($language == 'vi')? 'Đọc thêm':'read more' ?> <span class="arrow">&rsaquo;&rsaquo;</span></a>
                         </div>
                     </figcaption>
@@ -406,7 +402,6 @@ $seasion_promotion_args = array (
                             ?>
                         </p>
                         <div class="readmore">
-                            <span class="left"></span>
                             <a href="<?php the_permalink() ?>"><?php echo ($language == 'vi')? 'Đọc thêm':'read more' ?> <span class="arrow">&rsaquo;&rsaquo;</span></a>
                         </div>
                     </figcaption>
@@ -480,7 +475,6 @@ $vihicle_technology_args = array (
                             ?>
                         </p>
                         <div class="readmore">
-                            <span class="left"></span>
                             <a href="<?php the_permalink() ?>"><?php echo ($language == 'vi')? 'Đọc thêm':'read more' ?> <span class="arrow">&rsaquo;&rsaquo;</span></a>
                         </div>
                     </figcaption>

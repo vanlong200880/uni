@@ -178,17 +178,6 @@ get_header(); ?>
                                             <?php echo get_the_title()?>
                                         </a>
                                         <p>
-											<?php 
-//												$str = get_post_custom_values('excerpt', get_the_ID());
-//												$str = (empty($str))? get_the_excerpt() : $str[0];
-//												echo filter_character($str, 10);
-											?>
-                                            
-                                        </p>
-<!--                                        <div class="readmore">
-                                            <span class="left"></span>
-                                            <a href="<?php //the_permalink() ?>">read more <span class="arrow">&rsaquo;&rsaquo;</span></a>
-                                        </div>-->
                                     </figcaption>
                                 </figure>
                             </div>
