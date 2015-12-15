@@ -2,7 +2,7 @@
 $category_adv = get_the_category();
 $slug = $category_adv[0]->slug;
 $list_id = array();
-if(is_archive()){
+if(is_archive()){	
   $taget = '';
   switch ($slug) {
     case 'seasons-promotion':
@@ -224,21 +224,23 @@ if(is_archive()){
     }
     wp_reset_postdata();
 }
+wp_reset_postdata();
     $args = array (					 
 		'post_status'    => 'publish',
 		'order'          => 'DESC',
-		'orderby'        => 'rand',
-        'post_type'      => 'post',
-        'category_name'  => 'advertisement',
-        'posts_per_page' => 5,
-        'post__in' => $list_id,
+		'orderby'        => 'date',
+		'post_type'      => 'post',
+		'category_name'  => 'advertisement',
+		'post__in' => (!empty($list_id))?$list_id: array(''),
+		'posts_per_page' => 5,
+        
 	);
-    $the_query = new WP_Query( $args ); 
+    $adv_the_query = new WP_Query( $args ); 
     ?>	  
-<?php if($the_query -> have_posts()): ?>
+<?php if($adv_the_query -> have_posts()): ?>
 <div class="big-new-adv">
     <div class="advertisement">
-        <?php while ($the_query->have_posts()) {  $the_query->the_post();?>
+        <?php while ($adv_the_query->have_posts()) {  $adv_the_query->the_post();?>
         <div class="show-adv">
             <figure>
             <?php $website = get_post_custom_values('website', get_the_ID()); ?>

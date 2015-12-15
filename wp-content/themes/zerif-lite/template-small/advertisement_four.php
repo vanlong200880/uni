@@ -228,7 +228,7 @@ if(is_archive()){
 		'orderby'        => 'rand',
         'post_type'      => 'post',
         'category_name'  => 'advertisement',
-        'post__in' => $list_four_id,
+        'post__in' => (!empty($list_four_id))?$list_four_id: array(''),
         'posts_per_page' => 8,
 	);
     $four_adv_the_query = new WP_Query( $four_args );
