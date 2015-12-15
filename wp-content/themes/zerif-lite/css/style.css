@@ -234,71 +234,75 @@
 .category-menu-left ul li a{
   padding-left: 20px;
   color: #000;
+  display: block;
   position: relative;
-  z-index: 9;
+  z-index: 9999;
+}
+.category-menu-left ul li a:hover{
+  color: #fff;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition:  none;
+  transition:  none;
 }
 .category-menu-left ul li.unideal a:after,
-.category-menu-left ul li.page24 a:before,
-.category-menu-left ul li.vehicle-technology a:before,
-.category-menu-left ul li.fashion-health a:before,
-.category-menu-left ul li.real-estate-source a:before,
-.category-menu-left ul li.home-electronics a:before,
-.category-menu-left ul li.taste-event a:before,
-.category-menu-left ul li.seasons-promotion a:before{
+.category-menu-left ul li.page-24h a:after,
+.category-menu-left ul li.vehicle-technology a:after,
+.category-menu-left ul li.fashion-health a:after,
+.category-menu-left ul li.real-estate-source a:after,
+.category-menu-left ul li.home-electronics a:after,
+.category-menu-left ul li.taste-event a:after,
+.category-menu-left ul li.seasons-promotion a:after{
   content: " ";
   position: absolute;
+  top: 0;
+  left: 0;
   width: 5px;
   height: 41px;
-  display: block;
-  left: 0;
-  overflow: hidden;
   -webkit-transition: width 0.2s;
   -moz-transition: width 0.2s;
   -ms-transition: width 0.2s;
   -o-transition: width 0.2s;
   transition: width 0.2s;
-  z-index: 1;
+  z-index: -1;
 }
-.category-menu-left ul li.unideal:hover a:after{
-  content: " ";
-  display: block;
-  background-color: #1abc9c;
+.category-menu-left ul li.unideal:hover a:after,
+.category-menu-left ul li.page-24h:hover a:after,
+.category-menu-left ul li.vehicle-technology:hover a:after,
+.category-menu-left ul li.fashion-health:hover a:after,
+.category-menu-left ul li.real-estate-source:hover a:after,
+.category-menu-left ul li.home-electronics:hover a:after,
+.category-menu-left ul li.taste-event:hover a:after,
+.category-menu-left ul li.seasons-promotion:hover a:after{
   width: 276px;
-  color: #fff;
   -webkit-transition: width 0.2s;
   -moz-transition: width 0.2s;
   -ms-transition: width 0.2s;
   -o-transition: width 0.2s;
   transition: width 0.2s;
-  z-index: 9999999;
 }
-/*.category-menu-left ul li.unideal:hover a:before{
-  background-color: #1abc9c;
-  z-index: 999;
-  color: #fff;
-}*/
 .category-menu-left ul li.unideal a:after{ 
   background-color: #1abc9c;
 }
-.category-menu-left ul li.page24 a:before{ 
-  background-color: #c9302c;
+.category-menu-left ul li.page-24h a:after{ 
+  background-color: #FF540D;
 }
-.category-menu-left ul li.vehicle-technology a:before{ 
+.category-menu-left ul li.vehicle-technology a:after{ 
   background-color: #34495d;
 }
-.category-menu-left ul li.fashion-health a:before{
+.category-menu-left ul li.fashion-health a:after{
   background-color: #95c11e;
 }
-.category-menu-left ul li.real-estate-source a:before{
+.category-menu-left ul li.real-estate-source a:after{
   background-color: #302683;
 }
-.category-menu-left ul li.home-electronics a:before{
+.category-menu-left ul li.home-electronics a:after{
   background-color: #009bb4;
 }
-.category-menu-left ul li.taste-event a:before{
+.category-menu-left ul li.taste-event a:after{
   background-color: #f39200;
 }
-.category-menu-left ul li.seasons-promotion a:before{
+.category-menu-left ul li.seasons-promotion a:after{
   background-color: #c51a1b;
 }
 .category-menu-left ul li span.icon-17,
@@ -395,7 +399,7 @@
   font-size: 11px;
 }
 #wrap-new-adv .top-sub-adv .mg-20{
-  margin-bottom: 20px;
+  margin-bottom: 6px;
 }
 #wrap-new-adv .top-sub-adv .mg-20:nth-last-child(2),
 #wrap-new-adv .top-sub-adv .mg-20:last-child{
@@ -507,40 +511,43 @@
 }
 /*--Health and Taste--*/
 .article-all .show-article figure figcaption{
-  margin: 10px 0 20px;
+  margin: 10px 0 0;
 }
 .article-all .show-article figure figcaption a{
   font-size: 14px;
   font-weight: bold;
-  margin-bottom: 10px;
+  display: inline-block;
+  overflow: hidden;
+  height: 20px;
+  line-height: 20px;
+  margin-bottom: 2px;
 }
 .article-all .show-article figure figcaption p{
   font-size: 14px;
+  font-weight: normal;
+  text-align: left;
+  height: 40px;
+  overflow: hidden;
+  line-height: 20px
 }
 .article-all .show-article-thumb figure figcaption a{
   font-size: 13px;
   font-weight: normal;
 }
-.article-all .show-article figure figcaption p{
- font-weight: normal;
- margin-top: 10px;
- text-align: left;
-}
 .article-all .show-article figure figcaption div.readmore{
-  margin-top: 5px;
+  margin: 5px 0 10px;
   height: 20px;
   line-height: 20px;
-}
-.article-all .show-article figure figcaption div.readmore span.left{
-  border-left: 3px solid #E30513;
-  position: relative;
-  top: 2px;
 }
 .article-all .show-article figure figcaption div.readmore a{
   text-transform: uppercase;
   font-size: 10px;
   color: #333;
+  line-height: 10px;
   padding: 0 5px;
+  height: 15px;
+  display: inline-block;
+  border-left: 3px solid #E30513;
 }
 .article-all .show-article figure figcaption div.readmore a:hover,
 .article-all .show-article figure figcaption div.readmore a:hover span.arrow{
@@ -731,7 +738,7 @@
 #wrapp-details .wrapp-breadcrumb .breadcrumb{
   background-color: #efefef;
 }
-#real-estate.article-all .show-article,
+/*#real-estate.article-all .show-article,
 .article-all .wrapp-categories .show-article{
   min-height: 352px;
 }
@@ -743,7 +750,7 @@ body.category-unideal .article-all .wrapp-categories .show-article{
 }
 #wrapp-details .top-sub-featured .show-article{
   min-height: 185px;
-}
+}*/
 .top-sub-featured .show-article figure figcaption{
 	margin: 5px 0 0;
 }
