@@ -177,7 +177,6 @@ get_header(); ?>
                                         <a href="<?php the_permalink() ?>" title="<?php echo get_the_title(); ?>">
                                             <?php echo get_the_title()?>
                                         </a>
-                                        <p>
                                     </figcaption>
                                 </figure>
                             </div>
