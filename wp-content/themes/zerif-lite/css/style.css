@@ -331,7 +331,7 @@
   -webkit-transition:none;
   -moz-transition:none;
   -o-transition:none;
-  +transition:none;
+  transition:none;
 }
 .mCSB_inside > .mCSB_container{
   margin-right: 8px;

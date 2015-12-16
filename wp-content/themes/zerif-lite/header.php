@@ -50,8 +50,110 @@ endif;
 </head>
 
 <body <?php body_class($language); ?>>
-
-<div id="wrapper">
+	<div class="menu-mobile">
+		<?php get_template_part('template-small/menu'); ?>
+		<span class="close"><i class="fa fa-times"></i></span>
+	</div>
+	<div id="wrapper" class="menu-showing">
+		<div id="side-menu-overlay"></div>
+		<?php if(wpmd_is_phone()): ?>
+	<header id="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6">
+					<?php
+							echo '<a href="'.esc_url( home_url( '/' ) ).'">';
+									echo '<img src="'.get_template_directory_uri().'/images/logo.png" alt="'.get_bloginfo('title').'">';
+							echo '</a>';
+					?>
+				</div>
+				<div class="col-xs-6">
+					<span class="menu-top">
+						<i class="fa fa-bars"></i>
+					</span>
+				</div>
+			</div>
+		</div>
+		
+		<div class="menu-top-mobile navigation">
+			<nav class="navbar navbar-default">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+						<?php
+								wp_nav_menu( array(
+										'theme_location' => 'primary',
+										'menu'=> 'menu_top_private',
+										'menu_class' => 'nav navbar-nav',
+										'container_class' => '',
+								) );
+						?>
+						</div>
+					</div>
+				</div>
+			</nav>
+	</div>
+		
+		<div class="menu-sp-2">
+			<div class="container">
+				<div class="row">
+				<div class="col-xs-4">
+					<i class="fa fa-list"></i><?php echo ($language == 'vi')?'Danh mục': 'Category'; ?>
+				</div>
+				<div class="col-xs-4">
+					<div class="form-search">
+						<i class="fa fa-search"></i>
+						<?php echo ($language == 'vi')?'Tìm kiếm': 'Search'; ?>
+					</div>
+					
+				</div>
+				<div class="col-xs-4">
+					<div class="language">
+            <a href="<?php echo get_site_url(); ?>/vi" title="Tiếng Việt" class="vi"></a>
+            <a href="<?php echo get_site_url(); ?>/en" title="English" class="en"></a>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="menu-sp-2-search">
+			<div class="container">
+				<?php get_search_form(); ?>
+			</div>
+		</div>
+	</header>
+		<script type="text/javascript">
+			jQuery(document).ready(function($){
+				$(".menu-left").css('height',$(window).height() - 40);
+				$("#header .fa-list").on('click', function(){
+					$(".menu-mobile").addClass('site-page-frame');
+					$(".menu-showing").addClass('page-frame');
+					$("#side-menu-overlay").addClass('on');
+					$('body').css('position', 'fixed');
+				});
+				$("#side-menu-overlay").on('click', function(){
+					$(this).removeClass('on');
+					$(".menu-mobile").removeClass('site-page-frame');
+					$(".menu-showing").removeClass('page-frame');
+					$('body').removeAttr('style');
+				});
+				
+				// form search
+				$(".form-search").on('click', function(){
+					$(".menu-sp-2-search").slideToggle();
+				});
+				// close form 
+				$(".close").on('click', function(){
+					$("#side-menu-overlay").trigger('click');
+				});
+				
+				// menu top
+				$(".menu-top").on('click', function(){
+					$(".menu-top-mobile").slideToggle();
+				});
+			});
+		</script>
+	<?php else: ?>
     <header id="header">
         <div class="top-header">
                 <div class="menu-top navigation">
@@ -94,12 +196,15 @@ endif;
           </div>
         </div>
     </header>
+	<?php endif; ?>
   <section id="wrap-new-adv" class="animate-bounce-up">
     <div class="container subject">
         <div class="row">
+					<?php if(!wpmd_is_phone()): ?>
           <div class="col-md-3">
             <?php get_template_part('template-small/menu'); ?>
           </div>
+					<?php endif; ?>
           <div class="col-md-6">
             <?php get_template_part('template-small/advertisement'); ?>
           </div>

@@ -65,7 +65,7 @@
 		font-weight: bold;
 	}
 	/*--show and hide--*/
-	#header .navigation nav.navbar>.container .navbar-brand{
+/*	#header .navigation nav.navbar>.container .navbar-brand{
 		display: none;
 	}
 	#header .navigation{
@@ -93,8 +93,8 @@
 		display: none;
 	}
 	#header .navigation nav.navbar-default form.hide-search{
-		/*display: block;*/
-	}
+		display: block;
+	}*/
 	/*--css top-header-sp--*/
 	#header .top-header-tablet ul.unimedia-services{
 		width: 100%;
@@ -377,7 +377,7 @@
 		font-weight: bold;
 	}
 	/*--show and hide--*/
-	#header .navigation{
+/*	#header .navigation{
 		display: block;
 	}
 	#header .navigation-tablet{
@@ -410,7 +410,7 @@
 	}
 	#header .navigation nav.navbar-default form.hide-search{
 		display: none;
-	}
+	}*/
 
 	/*--css top-header-sp--*/
 	#header .top-header-sp{
@@ -732,6 +732,77 @@
 	}
 	#support{
 		bottom: 0;
+	}
+	
+	/*Fix menu for mobile */
+	
+	html, body{
+		position: relative;
+	}
+	.menu-mobile{
+		width: 250px;
+		float: left;
+		background: #131426;
+		height: 100%;
+		position: absolute;
+		z-index: 9999;
+		-webkit-transition: margin-left 0.35s ease;
+		-moz-transition: margin-left 0.35s ease;
+		-o-transition: margin-left 0.35s ease;
+		-ms-transition: margin-left 0.35s ease;
+		transition: margin-left 0.35s ease;
+		margin-left: -250px;
+		display: block;
+	}
+	.menu-mobile.site-page-frame {
+			margin-left: 0;
+	}
+	#wrapper {
+			width: 100%;
+			position: relative;
+			margin-left: 0;
+			-webkit-transition: margin-left 0.35s ease;
+			-moz-transition: margin-left 0.35s ease;
+			-o-transition: margin-left 0.35s ease;
+			-ms-transition: margin-left 0.35s ease;
+			transition: margin-left 0.35s ease;
+	}
+
+	.page-frame {
+			margin-left: 250px !important;
+			-webkit-transition: margin-left 0.35s ease;
+			-moz-transition: margin-left 0.35s ease;
+			-o-transition: margin-left 0.35s ease;
+			-ms-transition: margin-left 0.35s ease;
+			transition: margin-left 0.35s ease;
+	}
+	#side-menu-overlay {
+			display: none;
+	}
+	.menu-showing #side-menu-overlay {
+			bottom: 0;
+			display: none;
+			left: 0;
+			position: absolute;
+			right: 0;
+			top: 0;
+			z-index: 9999;
+			background: rgba(0,0,0,0.5);
+	}
+	.menu-showing #side-menu-overlay.on{
+		display: block;
+	}
+	.menu-sp-2{
+		margin: 15px 0;
+	}
+	.menu-top-mobile,
+	.menu-sp-2-search{
+		display: none;
+	}
+	.close{
+		position: absolute;
+		right: 0;
+		top: 0;
 	}
 }
 @media (min-width: 640px) and (max-width: 767px){

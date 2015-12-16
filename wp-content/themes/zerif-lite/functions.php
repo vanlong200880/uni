@@ -205,12 +205,16 @@ function uni_search_form( $form ) {
     $html .= '</select>';
         
     $keyword = ($language == 'vi')? 'Từ khóa': 'Keyword';
+		$lang = '';
+		if(!wpmd_is_phone()){
+			$lang = '<div class="language">
+									<a href="'.get_site_url().'/vi" title="Tiếng Việt" class="vi"></a>
+									<a href="'.get_site_url().'/en" title="English" class="en"></a>
+								</div>';
+		}
 	$form = '
 	<form class="navbar-form navbar-right hide-search searchform form-inline" method="get" id="searchform" role="search" action="' . home_url( '/' ) . '">
-		<div class="language">
-            <a href="'.get_site_url().'/vi" title="Tiếng Việt" class="vi"></a>
-            <a href="'.get_site_url().'/en" title="English" class="en"></a>
-        </div>
+		'.$lang.'
         <div class="form-group">
 			'.$html.'
 		</div>
