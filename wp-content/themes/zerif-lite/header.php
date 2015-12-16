@@ -62,14 +62,14 @@ endif;
 	<header id="header">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-6">
+				<div class="col-xs-6 logo-sp">
 					<?php
 							echo '<a href="'.esc_url( home_url( '/' ) ).'">';
 									echo '<img src="'.get_template_directory_uri().'/images/logo.png" alt="'.get_bloginfo('title').'">';
 							echo '</a>';
 					?>
 				</div>
-				<div class="col-xs-6">
+				<div class="col-xs-6 text-right">
 					<span class="menu-top">
 						<i class="fa fa-bars"></i>
 					</span>

@@ -27,12 +27,12 @@
 
 @media screen and (min-width: 768px) and (max-width: 1024px){
 	#header .navbar-right{
-		margin-right: -15px;
+		margin-right: 20px;
 	}
 	.language {
 	    position: absolute;
 	    right: 13px;
-	    top: 75px;
+	    top: 0px;
 	}
 	#btnPrint{
 		display: none;
@@ -131,7 +131,7 @@
 	}
 	#header .navigation nav.navbar-default .navbar-nav>li>a{
 		font-size: 12px;
-		padding:15px 8px;
+    	padding: 5px 6px;
 	}
 	#wrap-magazine .show-magazine ul li figure figcaption{
 		padding: 5px 2px;
@@ -307,6 +307,9 @@
 		min-height: inherit;
 		margin-bottom: 12px;
 	}
+	#header .top-header .adv-top img{
+		height: auto;
+	}
 	
 }
 @media screen and (max-width: 1024px) and (orientation: landscape){
@@ -345,17 +348,8 @@
 	}
 }
 @media (max-width:767px){
-	.language a {
-    height: 22px;
-    width: 35px;
-}
 	#header .navbar-right{
 		margin-right: -15px;
-	}
-	.language {
-	    position: absolute;
-	    right: 65px;
-	    top: 71px;
 	}
 	#btnPrint{
 		display: none;
@@ -367,7 +361,7 @@
 		padding: 10px;
 	}
 	#real-estate.article-all .show-article{
-		min-height: 240px;
+		
 	}
 	#health-taste.health-taste .show-article.col-md-12{
 		min-height: inherit;
@@ -613,13 +607,12 @@
 	}
 	#wrap-new-adv .top-sub-adv .mg-20{
 		margin-bottom: 10px;
-		min-height: 140px;
 	}
 	#wrap-new-adv .big-new-adv{
 		height: auto;
 	}
 	.article-all .show-article figure figcaption{
-		margin-bottom: 20px;
+		margin-bottom: 0;
 	}
 
 	/*--title chung--*/
@@ -735,7 +728,6 @@
 	}
 	
 	/*Fix menu for mobile */
-	
 	html, body{
 		position: relative;
 	}
@@ -755,54 +747,102 @@
 		display: block;
 	}
 	.menu-mobile.site-page-frame {
-			margin-left: 0;
+		margin-left: 0;
 	}
 	#wrapper {
-			width: 100%;
-			position: relative;
-			margin-left: 0;
-			-webkit-transition: margin-left 0.35s ease;
-			-moz-transition: margin-left 0.35s ease;
-			-o-transition: margin-left 0.35s ease;
-			-ms-transition: margin-left 0.35s ease;
-			transition: margin-left 0.35s ease;
+		width: 100%;
+		position: relative;
+		margin-left: 0;
+		-webkit-transition: margin-left 0.35s ease;
+		-moz-transition: margin-left 0.35s ease;
+		-o-transition: margin-left 0.35s ease;
+		-ms-transition: margin-left 0.35s ease;
+		transition: margin-left 0.35s ease;
 	}
-
 	.page-frame {
-			margin-left: 250px !important;
-			-webkit-transition: margin-left 0.35s ease;
-			-moz-transition: margin-left 0.35s ease;
-			-o-transition: margin-left 0.35s ease;
-			-ms-transition: margin-left 0.35s ease;
-			transition: margin-left 0.35s ease;
+		margin-left: 250px !important;
+		-webkit-transition: margin-left 0.35s ease;
+		-moz-transition: margin-left 0.35s ease;
+		-o-transition: margin-left 0.35s ease;
+		-ms-transition: margin-left 0.35s ease;
+		transition: margin-left 0.35s ease;
 	}
 	#side-menu-overlay {
-			display: none;
+		display: none;
 	}
 	.menu-showing #side-menu-overlay {
-			bottom: 0;
-			display: none;
-			left: 0;
-			position: absolute;
-			right: 0;
-			top: 0;
-			z-index: 9999;
-			background: rgba(0,0,0,0.5);
+		bottom: 0;
+		display: none;
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: 9999;
+		background: rgba(0,0,0,0.5);
 	}
 	.menu-showing #side-menu-overlay.on{
 		display: block;
-	}
-	.menu-sp-2{
-		margin: 15px 0;
 	}
 	.menu-top-mobile,
 	.menu-sp-2-search{
 		display: none;
 	}
+	.menu-sp-2-search .navbar-form{
+		padding-top: 0;
+	}
+	.menu-sp-2-search .form-inline div.form-group-sp{
+		position: relative;
+	}
+	.menu-sp-2-search .form-inline div.form-group-sp button.btn {
+	    margin-top: 0px;
+	    padding: 7px 12px;
+	    position: absolute;
+	    background-color: #2A255C;
+	    right: 0;
+	    top: 0;
+	    border-radius: 0;
+	    border:none;
+	}
+	.menu-sp-2-search .form-inline button i.fa{
+	    color: #fff;
+	}
 	.close{
 		position: absolute;
+		right: 10px;
+		top: 7px;
+	}
+	.menu-showing span.menu-top i.fa{
+		font-size: 30px;
+		padding-top: 15px;
+	}
+	.menu-sp-2{
+		margin: 5px 0 10px;
+		background-color: #e30513;
+		width: 100%;
+		height: 30px;
+		line-height: 30px;
+		color: #f4f4f4;
+		text-align: center;
+	}
+	.menu-sp-2 .col-xs-4{
+		border-right:1px solid #ff7885;
+	}
+	.menu-sp-2 .col-xs-4:last-child{
+		border-right: none;
+	}
+	.menu-sp-2 i.fa{
+		margin-right: 5px;
+		font-size: 16px;
+		font-weight: normal;
+	}
+	.menu-sp-2 .language{
+		position: absolute;
 		right: 0;
-		top: 0;
+	}
+	.menu-sp-2 .language a{
+		height: 22px;
+    	width: 35px;
+    	margin-left: 0;
 	}
 }
 @media (min-width: 640px) and (max-width: 767px){

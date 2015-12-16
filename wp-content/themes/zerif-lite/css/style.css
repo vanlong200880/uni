@@ -147,55 +147,6 @@
 #header .navbar-right{
   margin-right: 50px;
 }
-
-
-@-webkit-keyframes my {
-   0% { color: #F8CD0A; } 
-   50% { color: #fff;  } 
-   100% { color: #F8CD0A;  } 
- }
- @-moz-keyframes my { 
-   0% { color: #F8CD0A;  } 
-   50% { color: #fff;  }
-   100% { color: #F8CD0A;  } 
- }
- @-o-keyframes my { 
-   0% { color: #F8CD0A; } 
-   50% { color: #fff; } 
-   100% { color: #F8CD0A;  } 
- }
- @keyframes my { 
-   0% { color: #F8CD0A;  } 
-   50% { color: #fff;  }
-   100% { color: #F8CD0A;  } 
- }
- #header .navigation nav.navbar-default .navbar-nav>li:last-child>a {
-   -webkit-animation: my 700ms infinite;
-   -moz-animation: my 700ms infinite; 
-   -o-animation: my 700ms infinite; 
-   animation: my 700ms infinite;
-}
-
-@-webkit-keyframes my {
-   0% { color: #FFF; } 
-   50% { color: #292663;  } 
-   100% { color: #FFF;  } 
- }
- @-moz-keyframes my { 
-  0% { color: #FFF; } 
-   50% { color: #292663;  } 
-   100% { color: #FFF;  } 
- }
- @-o-keyframes my { 
-   0% { color: #FFF; } 
-   50% { color: #292663;  } 
-   100% { color: #FFF;  }  
- }
- @keyframes my { 
-   0% { color: #FFF; } 
-   50% { color: #292663;  } 
-   100% { color: #FFF;  }  
- } 
 #header .navigation nav.navbar-default .navbar-form .form-group select{
   max-width: 125px;
 }
