@@ -4,7 +4,7 @@ $category_adv = get_the_category();
 $slug = $category_adv[0]->slug;
 $item = 8;
 if(wpmd_is_tablet()){
-	$item = 3;
+	$item = 4;
 }
 if(is_archive()){
   $taget = '';
@@ -241,7 +241,7 @@ if(is_archive()){
 <div class="top-sub-adv">
 	<div class="row">
     <?php while ($four_adv_the_query->have_posts()) {  $four_adv_the_query->the_post();?>
-    <div class="col-md-6 col-sm-4 col-xs-6 mg-20">
+    <div class="col-md-6 col-sm-3 col-xs-6 mg-20">
         <div class="show-adv">
             <figure>
                 <?php $website = get_post_custom_values('website', get_the_ID()); ?>

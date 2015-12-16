@@ -210,7 +210,7 @@ endif;
           <div class="col-md-6 col-sm-8">
             <?php get_template_part('template-small/advertisement'); ?>
           </div>
-          <div class="col-md-3 col-sm-8">
+          <div class="col-md-3 col-sm-12">
             <?php get_template_part('template-small/advertisement_four'); ?>
           </div>
         </div>
