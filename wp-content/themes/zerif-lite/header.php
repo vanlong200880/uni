@@ -203,26 +203,16 @@ endif;
     <div class="container subject">
         <div class="row">
 					<?php if(!wpmd_is_phone()): ?>
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-4">
             <?php get_template_part('template-small/menu'); ?>
           </div>
 					<?php endif; ?>
-          <div class="col-md-6">
+          <div class="col-md-6 col-sm-8">
             <?php get_template_part('template-small/advertisement'); ?>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-8">
             <?php get_template_part('template-small/advertisement_four'); ?>
           </div>
-            <div class="col-md-6 col-sm-6 col-xs-12">
-                <?php //get_template_part('template-small/advertisement'); ?>
-            </div><!-- /col-md-6 -->
-
-            <div class="col-md-6 col-sm-6 col-xs-12">
-                <div class="row">
-                    <?php //get_template_part('template-small/advertisement_four'); ?>
-                    <!--end top-sub-adv-->								
-                </div>
-            </div><!-- /col-md-6 -->
         </div>
     </div>
 </section><!--end wrap-new-adv-->

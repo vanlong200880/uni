@@ -2,6 +2,10 @@
 $list_four_id = array();
 $category_adv = get_the_category();
 $slug = $category_adv[0]->slug;
+$item = 8;
+if(wpmd_is_tablet()){
+	$item = 3;
+}
 if(is_archive()){
   $taget = '';
   switch ($slug) {
@@ -43,7 +47,7 @@ if(is_archive()){
                 'value'      => $taget
             ),
         ),
-        'posts_per_page' => 8,
+        'posts_per_page' => $item,
 	);
     $four_heath_care_the_query = new WP_Query( $four_heath_care_args ); 
     if($four_heath_care_the_query->have_posts()){
@@ -71,7 +75,7 @@ if(is_archive()){
                 'value'      => 'fashion_health'
             ),
         ),
-        'posts_per_page' => 8,
+        'posts_per_page' => $item,
 	);
     $four_heath_care_the_query = new WP_Query( $four_heath_care_args ); 
     if($four_heath_care_the_query->have_posts()){
@@ -99,7 +103,7 @@ if(is_archive()){
                 'value'      => 'taste_event'
             ),
         ),
-        'posts_per_page' => 8,
+        'posts_per_page' => $item,
 	);
     $four_taste_event_the_query = new WP_Query( $four_taste_event_args ); 
     if($four_taste_event_the_query->have_posts()){
@@ -127,7 +131,7 @@ if(is_archive()){
                 'value'      => 'real_estate_source'
             ),
         ),
-        'posts_per_page' => 8,
+        'posts_per_page' => $item,
 	);
     $four_real_estate_source_the_query = new WP_Query( $four_real_estate_source_args ); 
     if($four_real_estate_source_the_query->have_posts()){
@@ -155,7 +159,7 @@ if(is_archive()){
                 'value'     => 'home_electronics'
             ),
         ),
-        'posts_per_page' => 8,
+        'posts_per_page' => $item,
 	);
     $four_trevel_education_the_query = new WP_Query( $four_trevel_education_args ); 
     if($four_trevel_education_the_query->have_posts()){
@@ -183,7 +187,7 @@ if(is_archive()){
                 'value'     => 'vehicle_technology'
             ),
         ),
-        'posts_per_page' => 8,
+        'posts_per_page' => $item,
 	);
     $four_trevel_education_the_query = new WP_Query( $four_trevel_education_args ); 
     if($four_trevel_education_the_query->have_posts()){
@@ -211,7 +215,7 @@ if(is_archive()){
                 'value'      => 'seasons_promotion'
             ),
         ),
-        'posts_per_page' => 8,
+        'posts_per_page' => $item,
 	);
     $four_seasion_promotion_the_query = new WP_Query( $four_seasion_promotion_args ); 
     if($four_seasion_promotion_the_query->have_posts()){
@@ -229,7 +233,7 @@ if(is_archive()){
         'post_type'      => 'post',
         'category_name'  => 'advertisement',
         'post__in' => (!empty($list_four_id))?$list_four_id: array(''),
-        'posts_per_page' => 8,
+        'posts_per_page' => $item,
 	);
     $four_adv_the_query = new WP_Query( $four_args );
     ?>	  
@@ -237,7 +241,7 @@ if(is_archive()){
 <div class="top-sub-adv">
 	<div class="row">
     <?php while ($four_adv_the_query->have_posts()) {  $four_adv_the_query->the_post();?>
-    <div class="col-md-6 col-sm-6 col-xs-6 mg-20">
+    <div class="col-md-6 col-sm-4 col-xs-6 mg-20">
         <div class="show-adv">
             <figure>
                 <?php $website = get_post_custom_values('website', get_the_ID()); ?>
