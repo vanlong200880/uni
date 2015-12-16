@@ -50,10 +50,12 @@ endif;
 </head>
 
 <body <?php body_class($language); ?>>
+	<?php if(wpmd_is_phone()): ?>
 	<div class="menu-mobile">
 		<?php get_template_part('template-small/menu'); ?>
 		<span class="close"><i class="fa fa-times"></i></span>
 	</div>
+	<?php endif; ?>
 	<div id="wrapper" class="menu-showing">
 		<div id="side-menu-overlay"></div>
 		<?php if(wpmd_is_phone()): ?>
