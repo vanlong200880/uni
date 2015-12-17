@@ -325,6 +325,21 @@
 	.article-all .wrapp-categories .show-article img {
 	    height: auto;
 	}
+	.category-menu-left ul li.unideal:hover a:after,
+	.category-menu-left ul li.page-24h:hover a:after,
+	.category-menu-left ul li.vehicle-technology:hover a:after,
+	.category-menu-left ul li.fashion-health:hover a:after,
+	.category-menu-left ul li.real-estate-source:hover a:after,
+	.category-menu-left ul li.home-electronics:hover a:after,
+	.category-menu-left ul li.taste-event:hover a:after,
+	.category-menu-left ul li.seasons-promotion:hover a:after{
+	  width: 5px;
+	  -webkit-transition: none;
+	  -moz-transition: none;
+	  -ms-transition: none;
+	  -o-transition: none;
+	  transition: none;
+	}
 	
 }
 @media screen and (max-width: 1024px) and (orientation: landscape){
