@@ -510,6 +510,14 @@
   overflow: hidden;
   line-height: 20px
 }
+.category-unideal .article-all .show-article figure figcaption a{
+  height: 10px;
+  line-height: 10px;
+}
+.category-unideal .article-all .show-article figure figcaption p{
+  height: 10px;
+  line-height: 10px;
+}
 .article-all .show-article-thumb figure figcaption a{
   font-size: 13px;
   font-weight: normal;
