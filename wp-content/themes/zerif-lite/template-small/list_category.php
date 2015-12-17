@@ -29,7 +29,7 @@ $fashion_health_args = array (
         while ($fashion_health_the_query->have_posts()){
             $fashion_health_the_query->the_post(); 
             if($i == 0 || $i == 1):?>
-            <div class="show-article col-md-6">
+            <div class="show-article col-md-6 col-sm-6">
                 <figure>
                     <a href="<?php the_permalink() ?>">
                         <?php
@@ -127,7 +127,7 @@ $taste_event_args = array (
         while ($taste_event_the_query->have_posts()){
             $taste_event_the_query->the_post(); 
             if($i == 0 || $i == 1):?>
-            <div class="show-article col-md-6">
+            <div class="show-article col-md-6 col-sm-6">
                 <figure>
                     <a href="<?php the_permalink() ?>">
                         <?php
