@@ -7,7 +7,7 @@ $fashion_health_args = array (
 		'orderby'        => 'date',
         'post_type'      => 'post',
         'category_name'  => $fashion_health,
-        'posts_per_page' => 4,
+        'posts_per_page' => 5,
 	);
     $fashion_health_the_query = new WP_Query( $fashion_health_args ); 
     if($fashion_health_the_query->have_posts()){ 
@@ -28,8 +28,8 @@ $fashion_health_args = array (
     <?php     $i = 0;
         while ($fashion_health_the_query->have_posts()){
             $fashion_health_the_query->the_post(); 
-            if($i == 0):?>
-            <div class="show-article col-md-12">
+            if($i == 0 || $i == 1):?>
+            <div class="show-article col-md-6">
                 <figure>
                     <a href="<?php the_permalink() ?>">
                         <?php
@@ -107,7 +107,7 @@ $taste_event_args = array (
 		'orderby'        => 'date',
         'post_type'      => 'post',
         'category_name'  => $taste_event,
-        'posts_per_page' => 4,
+        'posts_per_page' => 5,
 	);
     $taste_event_the_query = new WP_Query( $taste_event_args ); 
     if($taste_event_the_query->have_posts()){ 
@@ -126,8 +126,8 @@ $taste_event_args = array (
     <?php     $i = 0;
         while ($taste_event_the_query->have_posts()){
             $taste_event_the_query->the_post(); 
-            if($i == 0):?>
-            <div class="show-article col-md-12">
+            if($i == 0 || $i == 1):?>
+            <div class="show-article col-md-6">
                 <figure>
                     <a href="<?php the_permalink() ?>">
                         <?php

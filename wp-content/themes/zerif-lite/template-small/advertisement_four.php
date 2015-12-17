@@ -3,9 +3,9 @@ $list_four_id = array();
 $category_adv = get_the_category();
 $slug = $category_adv[0]->slug;
 $item = 8;
-if(wpmd_is_tablet()){
-	$item = 4;
-}
+//if(wpmd_is_tablet()){
+//	$item = 8;
+//}
 if(is_archive()){
   $taget = '';
   switch ($slug) {
