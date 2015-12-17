@@ -27,12 +27,12 @@
 
 @media screen and (min-width: 768px) and (max-width: 1024px){
 	#header .navbar-right{
-		margin-right: 20px;
+		margin-right: 50px;
 	}
 	.language {
 	    position: absolute;
-	    right: 13px;
-	    top: 0px;
+	    right: -50px;
+    	top: 2px;
 	}
 	#btnPrint{
 		display: none;
@@ -50,7 +50,7 @@
 	#wrapp-details .show-details{
 		padding: 15px;
 	}
-	#health-taste.health-taste .show-article.col-md-12 {
+	/*#health-taste.health-taste .show-article.col-md-12 {
 		min-height: 360px;
 	}
 	.article-all .wrapp-categories .show-article{
@@ -59,7 +59,7 @@
 	#real-estate.article-all .show-article
 	{
 		min-height: 200px;
-	}
+	}*/
 	h2{
 		font-size: 20px;
 		font-weight: bold;
@@ -131,7 +131,7 @@
 	}
 	#header .navigation nav.navbar-default .navbar-nav>li>a{
 		font-size: 12px;
-    	padding: 5px 6px;
+    	padding: 5px 12px 5px 0;
 	}
 	#wrap-magazine .show-magazine ul li figure figcaption{
 		padding: 5px 2px;
@@ -209,11 +209,11 @@
 		margin-top: 5px;
 	}
 	#wrap-new-adv .big-new-adv{
-		height: 230px;
+		height: 330px;
 		overflow: hidden;
 	}
 	#wrap-new-adv .big-new-adv .owl-theme .owl-controls{
-		bottom: 40px;
+		bottom: 0;
 	}
 	#wrapp-details .show-details form.wpcf7-form input.wpcf7-text{
 	  width: 100%;
@@ -310,6 +310,21 @@
 	#header .top-header .adv-top img{
 		height: auto;
 	}
+	.category-menu-left ul{
+		height: 287px;
+	}
+	.category-menu-left h2{
+		height: 30px;
+		line-height: 30px;
+		font-size: 16px;
+	}
+	#header .top-header .container{
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.article-all .wrapp-categories .show-article img {
+	    height: auto;
+	}
 	
 }
 @media screen and (max-width: 1024px) and (orientation: landscape){
@@ -345,6 +360,22 @@
 	#header .top-header-tablet ul.unimedia-services li:last-child{
 		width: 16.67%;
 		border-right: none;
+	}
+	.category-menu-left ul li {
+	    height: 39px;
+	    line-height: 39px;
+	}
+	.category-menu-left ul {
+	    height: 273px;
+	}
+	#wrap-new-adv .big-new-adv .owl-theme .owl-controls {
+	    bottom: 5px;
+	}
+	#header .navigation nav.navbar-default .navbar-nav>li>a {
+	    font-size: 14px;
+	}
+	#header .navbar-right {
+	    margin-right: 62px;
 	}
 }
 @media (max-width:767px){
@@ -666,6 +697,9 @@
 	#footer{
 		padding: 15px 0;
 	}
+	#footer .menu-footer ul li a{
+		font-size: 11px;
+	}
 	#footer .border-right-footer{
 		border-right:none;
 		border-bottom: 1px solid #727272;
@@ -843,6 +877,9 @@
 		height: 22px;
     	width: 35px;
     	margin-left: 0;
+	}
+	#wrap-new-adv .big-new-adv .owl-theme .owl-controls{
+		bottom: 10px;
 	}
 }
 @media (min-width: 640px) and (max-width: 767px){
