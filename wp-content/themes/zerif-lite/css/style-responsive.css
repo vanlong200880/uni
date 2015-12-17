@@ -206,7 +206,7 @@
 	}
 	
 	.article-all .show-article figure figcaption p{
-		margin-top: 5px;
+		/*margin-top: 5px;*/
 	}
 	#wrap-new-adv .big-new-adv{
 		height: 330px;
@@ -312,6 +312,7 @@
 	}
 	.category-menu-left ul{
 		height: 287px;
+		overflow: hidden;
 	}
 	.category-menu-left h2{
 		height: 30px;
@@ -324,6 +325,13 @@
 	}
 	.article-all .wrapp-categories .show-article img {
 	    height: auto;
+	}
+	.category-menu-left ul li a:hover{
+	  color: #000;
+	  -webkit-transition: none;
+	  -moz-transition: none;
+	  -o-transition:  none;
+	  transition:  none;
 	}
 	.category-menu-left ul li.unideal:hover a:after,
 	.category-menu-left ul li.page-24h:hover a:after,
@@ -340,16 +348,15 @@
 	  -o-transition: none;
 	  transition: none;
 	}
-	
 }
 @media screen and (max-width: 1024px) and (orientation: landscape){
-	.article-all .wrapp-categories .show-article{
+	/*.article-all .wrapp-categories .show-article{
 		min-height: 250px;
 	}
 	#real-estate.article-all .show-article
 	{
 		min-height: 200px;
-	}
+	}*/
 	#wrap-new-adv .big-new-adv{
 		height: 303px;
 		overflow: hidden;
@@ -382,6 +389,7 @@
 	}
 	.category-menu-left ul {
 	    height: 273px;
+	    overflow: hidden;
 	}
 	#wrap-new-adv .big-new-adv .owl-theme .owl-controls {
 	    bottom: 5px;

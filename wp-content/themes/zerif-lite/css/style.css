@@ -178,6 +178,7 @@
 .category-menu-left ul{
   background: #f2f2f2;
   height: 330px;
+  overflow: hidden;
 }
 .category-menu-left ul li{
   border-bottom: 1px solid #d5d5d5;
@@ -495,7 +496,7 @@
 .article-all .show-article figure figcaption a{
   font-size: 14px;
   font-weight: bold;
-  display: inline-block;
+  display: block;
   overflow: hidden;
   height: 20px;
   line-height: 20px;
