@@ -110,7 +110,7 @@ $vihicle_technology_args = array (
             ?>
             <div class="col-md-3 col-sm-3 col-xs-6 show-article">
                 <figure>
-                    <a href="<?php the_permalink() ?>">
+                    <a class="figure-img" href="<?php the_permalink() ?>">
                         <?php
                             $attachment_id = get_post_thumbnail_id(get_the_ID());
                             if (!empty($attachment_id)) { 
@@ -183,7 +183,7 @@ $vihicle_technology_args = array (
 					<?php while ( have_posts() ) : the_post(); ?>
 					<div class="col-md-3 col-sm-3 col-xs-12 show-article">
 						<figure>
-							<a href="<?php the_permalink() ?>" title="<?php echo get_the_title(); ?>">
+							<a class="figure-img" href="<?php the_permalink() ?>" title="<?php echo get_the_title(); ?>">
 								 <?php
                                     $attachment_id = get_post_thumbnail_id(get_the_ID());
                                     if (!empty($attachment_id)) { 
