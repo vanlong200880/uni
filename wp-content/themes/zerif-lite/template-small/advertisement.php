@@ -24,6 +24,9 @@ if(is_archive()){
         $taget = 'fashion_health';
         break;
     default:
+				$arr = array('seasons_promotion','taste_event','home_electronics','real_estate_source','vehicle_technology','fashion_health');
+				$rand_keys = array_rand($arr, 1);
+				$taget = $arr[$rand_keys];
         break;
   }
   
