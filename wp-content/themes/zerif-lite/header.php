@@ -111,8 +111,8 @@ endif;
 				</div>
 				<div class="col-xs-4">
 					<div class="language">
-            <a href="<?php echo get_site_url(); ?>/vi" title="Tiếng Việt" class="vi"></a>
-            <a href="<?php echo get_site_url(); ?>/en" title="English" class="en"></a>
+            <a href="'.get_site_url().'/vi'.$_SERVER['REQUEST_URI'].'" title="Tiếng Việt" class="vi"></a>
+						<a href="'.get_site_url().'/en'.$_SERVER['REQUEST_URI'].'" title="English" class="en"></a>
 					</div>
 				</div>
 			</div>

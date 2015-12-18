@@ -109,6 +109,7 @@
 #header .navigation nav.navbar-default .navbar-nav>.active>a:focus {
     background-color: #EF9A07;
     color: #fff;
+		padding-bottom: 5px;
 }
 #header .navigation nav.navbar-default .navbar-nav>li>a:hover{
   color: #000;
@@ -379,10 +380,10 @@
 #wrap-new-adv .top-sub-adv .mg-20{
   margin-bottom: 6px;
 }
-#wrap-new-adv .top-sub-adv .mg-20:nth-last-child(2),
+/*#wrap-new-adv .top-sub-adv .mg-20:nth-last-child(2),
 #wrap-new-adv .top-sub-adv .mg-20:last-child{
   margin-bottom: 0;
-}
+}*/
 /*--custom slide adv--*/
 #wrap-new-adv .big-new-adv .owl-theme .owl-controls{
   position: absolute;
@@ -410,7 +411,9 @@
   overflow: hidden;
   height: 370px;
 }
-
+#wrap-new-adv .top-sub-adv img{
+	max-height: 88px;
+}
 #wrap-new-adv{
 	margin-bottom: 20px;
 }
@@ -733,8 +736,12 @@
 #wrapp-details .wrapp-breadcrumb .breadcrumb{
   background-color: #efefef;
 }
-.article-all .wrapp-categories .show-article img{
+.article-all .show-article img{
   height: 195px;
+}
+.article-all .top-sub-featured .show-article img,
+#health-taste.article-all .show-article img{
+  height: auto;
 }
 /*#real-estate.article-all .show-article,
 .article-all .wrapp-categories .show-article{

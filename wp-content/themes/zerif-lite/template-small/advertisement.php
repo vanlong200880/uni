@@ -1,6 +1,13 @@
 <?php
-$category_adv = get_the_category();
-$slug = $category_adv[0]->slug;
+wp_reset_postdata();
+//$category_adv = get_the_category();
+//$slug = $category_adv[0]->slug;
+$category_adv = get_queried_object();
+$slug = $category_adv->slug;
+//echo '<pre>';
+//var_dump($category_adv);
+//echo '</pre>';
+//var_dump($slug);
 $list_id = array();
 if(is_archive()){	
   $taget = '';

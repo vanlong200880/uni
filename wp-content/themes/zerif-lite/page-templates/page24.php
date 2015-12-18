@@ -48,7 +48,7 @@ $args = array (
             ?>
             <div class="col-md-3 col-sm-3 col-xs-6 show-article">
                 <figure>
-                    <a href="<?php the_permalink() ?>">
+									<a class="figure-img" href="<?php the_permalink() ?>">
                         <?php
                             $attachment_id = get_post_thumbnail_id(get_the_ID());
                             if (!empty($attachment_id)) { 

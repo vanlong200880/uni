@@ -1,7 +1,9 @@
 <?php
 $list_four_id = array();
-$category_adv = get_the_category();
-$slug = $category_adv[0]->slug;
+//$category_adv = get_the_category();
+//$slug = $category_adv[0]->slug;
+$category_adv = get_queried_object();
+$slug = $category_adv->slug;
 $item = 8;
 //if(wpmd_is_tablet()){
 //	$item = 8;
@@ -27,7 +29,7 @@ if(is_archive()){
     case 'fashion-health':
         $taget = 'fashion_health';
         break;
-    default:
+		default:
 				$arr = array('seasons_promotion','taste_event','home_electronics','real_estate_source','vehicle_technology','fashion_health');
 				$rand_keys = array_rand($arr, 1);
 				$taget = $arr[$rand_keys];

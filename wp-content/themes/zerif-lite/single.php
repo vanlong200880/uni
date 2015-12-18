@@ -145,8 +145,15 @@ get_header(); ?>
                     'orderby'        => 'date',
                     'post_type'      => 'post',
                     'category_name'  => $category[0]->slug,
-                    'posts_per_page' => 10,
-                    'post__not_in'   => array(get_the_ID()),
+           //          'meta_query'     => array(
+			        //     array(
+			        //         'key'		 => 'advertisement_top_page',
+			        //         'value'      => false,
+			        //         'compare' 	=> '=',
+			        //     ),
+			        // ),
+			        'posts_per_page' => 10,
+                    'post__not_in'   => array(get_the_ID())
                 );
                 $featured_the_query = new WP_Query( $featured ); 
                 if($featured_the_query){ ?>

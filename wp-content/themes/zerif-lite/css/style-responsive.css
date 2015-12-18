@@ -26,6 +26,9 @@
 /* iPads (portrait) ----------- */
 
 @media screen and (min-width: 768px) and (max-width: 1024px){
+	#wrap-new-adv .top-sub-adv img{
+		max-height: none;
+	}
 	#header .navbar-right{
 		margin-right: 50px;
 	}
@@ -131,7 +134,10 @@
 	}
 	#header .navigation nav.navbar-default .navbar-nav>li>a{
 		font-size: 12px;
-    	padding: 5px 12px 5px 0;
+		display: block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 6px;
 	}
 	#wrap-magazine .show-magazine ul li figure figcaption{
 		padding: 5px 2px;
@@ -328,7 +334,7 @@
 		padding-left: 5px;
 		padding-right: 5px;
 	}
-	.article-all .wrapp-categories .show-article img {
+	.article-all .show-article img {
 	    height: auto;
 	}
 	.category-menu-left ul li a:hover{
@@ -369,6 +375,9 @@
 	{
 		min-height: 200px;
 	}*/
+	#wrap-new-adv .top-sub-adv img{
+		max-height: 71px;
+	}
 	#wrap-new-adv .big-new-adv{
 		height: 303px;
 		overflow: hidden;

@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Zerif Lite functions and definitions
  */
@@ -203,13 +203,16 @@ function uni_search_form( $form ) {
         }
     endif;
     $html .= '</select>';
-        
+
     $keyword = ($language == 'vi')? 'Từ khóa': 'Keyword';
+    $uri_home = preg_replace('/(http|https)\:\/\/'.$_SERVER['SERVER_NAME'].'/', '', WP_HOME);
+
+    $uri_home = str_replace($uri_home.'/en', '', $_SERVER['REQUEST_URI']);
 		$lang = '';
 		if(!wpmd_is_phone()){
 			$lang = '<div class="language">
-									<a href="'.get_site_url().'/vi" title="Tiếng Việt" class="vi"></a>
-									<a href="'.get_site_url().'/en" title="English" class="en"></a>
+									<a href="'.get_site_url().'/vi'.$uri_home.'" title="Tiếng Việt" class="vi"></a>
+									<a href="'.get_site_url().'/en'.$uri_home.'" title="English" class="en"></a>
 								</div>';
 		}
 	$form = '
