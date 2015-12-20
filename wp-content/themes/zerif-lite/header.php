@@ -203,14 +203,14 @@ endif;
     <div class="container subject">
         <div class="row">
 					<?php if(!wpmd_is_phone()): ?>
-          <div class="col-md-3 col-sm-4">
+          <div class="col-md-<?php echo (wpmd_is_tablet())? 3: 2; ?> col-sm-4">
             <?php get_template_part('template-small/menu'); ?>
           </div>
 					<?php endif; ?>
           <div class="col-md-6 col-sm-8">
             <?php get_template_part('template-small/advertisement'); ?>
           </div>
-          <div class="col-md-3 col-sm-12">
+          <div class="col-md-<?php echo (wpmd_is_tablet())? 3: 4; ?> col-sm-12">
             <?php get_template_part('template-small/advertisement_four'); ?>
           </div>
         </div>

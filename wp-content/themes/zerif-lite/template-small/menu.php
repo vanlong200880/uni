@@ -13,11 +13,15 @@
  $arr = array('magazine', 'advertisement', 'uncategorised');
  $i = 0;
  foreach ($categories as $value){
+   $high = '';
+   if($value->slug =='unideal'){
+     $high = 'high';
+   }
    if(!in_array($value->slug, $arr))
    { ?>
-  <li class="color-item-<?php echo $value->term_id ?> <?php echo $value->slug ?> "><span class="icon-<?php echo $value->term_id ?>"></span><a href="<?php echo get_term_link($value) ?>"><?php echo $value->name; ?></a></li>
+  <li class="<?php echo $high; ?> color-item-<?php echo $value->term_id ?> <?php echo $value->slug ?> "><span class="icon-<?php echo $value->term_id ?>"></span><a href="<?php echo get_term_link($value) ?>"><var><?php echo $value->name; ?></var></a></li>
 	<?php if($i == 0): ?>
-	<li class="page-24h"><a href="<?php echo get_site_url() ?>/<?php echo $language ?>/24h">24h</a></li>
+  <li class="page-24h high"><a href="<?php echo get_site_url() ?>/<?php echo $language ?>/24h"><span>24h</span></a></li>
 	<?php endif; ?>
 	<?php $i++; ?>
 <?php 

@@ -27,8 +27,7 @@
                                 echo '</a>';
                             ?>
                         </p>
-                        <p>Copyright © 2015 UNIMEDIA</p>
-                        <p>All rigths reserved.</p>
+                        <p>Copyright © 2015 UNIMEDIA All rigths reserved.</p>
                     </div><!--end info-company-->
                 </div>
 

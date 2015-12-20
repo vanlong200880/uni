@@ -168,23 +168,27 @@
 /*--category-menu-left--*/
 .category-menu-left h2{
   background: #6f6f6e;
-  font-size: 20px;
+  font-size: 14px;
   width: 100%;
-  height: 40px;
-  line-height: 40px;
+  height: 35px;
+  line-height: 35px;
   color: #fff;
   margin-bottom: 0;
   padding-left: 10px;
 }
 .category-menu-left ul{
   background: #f2f2f2;
-  height: 330px;
+  height: 335px;
   overflow: hidden;
 }
 .category-menu-left ul li{
   border-bottom: 1px solid #d5d5d5;
   height: 41px;
   line-height: 41px;
+}
+.container{
+    padding-right: 5px;
+    padding-left: 5px;
 }
 .category-menu-left ul li a{
   padding-left: 20px;
@@ -199,6 +203,25 @@
   -moz-transition: none;
   -o-transition:  none;
   transition:  none;
+}
+.category-menu-left ul li.high a{
+  font-weight: bold;
+}
+.category-menu-left ul li.unideal a var{
+  background-color: #1abc9c;
+  padding: 5px 15px;
+  border-radius: 22px;
+  -moz-border-radius: 22px;
+  -webkit-border-radius: 22px;
+  color: #FFF;
+}
+.category-menu-left ul li.page-24h a span{
+  background: #E30513;
+  padding: 5px 15px;
+  border-radius: 22px;
+  -moz-border-radius: 22px;
+  -webkit-border-radius: 22px;
+  color: #FFF;
 }
 .category-menu-left ul li.unideal a:after,
 .category-menu-left ul li.page-24h a:after,
@@ -221,8 +244,8 @@
   transition: width 0.2s;
   z-index: -1;
 }
-.category-menu-left ul li.unideal:hover a:after,
-.category-menu-left ul li.page-24h:hover a:after,
+/*.category-menu-left ul li.unideal:hover a:after,*/
+/*.category-menu-left ul li.page-24h:hover a:after,*/
 .category-menu-left ul li.vehicle-technology:hover a:after,
 .category-menu-left ul li.fashion-health:hover a:after,
 .category-menu-left ul li.real-estate-source:hover a:after,
@@ -389,10 +412,13 @@
   position: absolute;
   right: 0;
   /*bottom: 60px;*/
-  bottom: 5px;
+  bottom: 0;
   margin-top: 0;
   background: rgba(0, 0, 0, 0.5);
   width: 100%;
+}
+#wrap-new-adv .big-new-adv img{
+  max-height: 370px;
 }
 
 #wrap-new-adv .big-new-adv .owl-theme .owl-controls .owl-page span{
@@ -412,7 +438,7 @@
   height: 370px;
 }
 #wrap-new-adv .top-sub-adv img{
-	max-height: 88px;
+	max-height: 119px;
 }
 #wrap-new-adv{
 	margin-bottom: 20px;

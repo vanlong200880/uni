@@ -5,9 +5,9 @@ $list_four_id = array();
 $category_adv = get_queried_object();
 $slug = $category_adv->slug;
 $item = 8;
-//if(wpmd_is_tablet()){
-//	$item = 8;
-//}
+if(wpmd_is_notdevice()){
+	$item = 6;
+}
 if(is_archive()){
   $taget = '';
   switch ($slug) {
