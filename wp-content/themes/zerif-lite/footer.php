@@ -23,7 +23,7 @@
                         <p class="logo-footer hiden">
                             <?php
                                 echo '<a href="'.esc_url( home_url( '/' ) ).'">';
-                                    echo '<img src="'.get_template_directory_uri().'/images/logo.png" alt="'.get_bloginfo('title').'" title="'.get_bloginfo('title').'">';
+                                    echo '<img src="'.get_template_directory_uri().'/images/logo_'.$language.'.png" alt="'.get_bloginfo('title').'" title="'.get_bloginfo('title').'">';
                                 echo '</a>';
                             ?>
                         </p>

@@ -5,18 +5,80 @@
 global $language;
 get_header(); ?>
 <?php 
-$category = get_the_category();
-$slug = $category[0]->slug;
-$parent = get_category($category[0]->category_parent); 
+$category = get_queried_object();
+$slug = $category->slug;
+$parent = get_category($category->category_parent);
 ?>
-<?php if(!empty($category[0]->category_parent)):
+<?php if($parent->slug == 'magazine-online' || $category->slug =='magazine-online'): ?>
+<section id="four-seasons">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="title seasions">
+						<h2><?php echo ($parent->name)? $parent->name .'/': '' ; ?> <?php echo $category->name; ?></h2>
+						<div class="line">
+								<span class="icon-dotted-01"></span>
+						</div>
+				</div><!--end title-->
+			</div>
+			<div class="col-md-12">
+				<ul class="row">
+					<?php 
+						$args = array(
+							'post_status'    => 'publish',
+							'order'          => 'ASC',
+							'meta_key'			=> 'kich_thuoc_trang',
+							'orderby'			=> 'meta_value_num',
+							'post_type'      => 'post',
+							'category_name'  => $category->slug,
+						);
+						query_posts($args);
+						?>
+					<?php if ( have_posts() ) : ?>
+					
+						<?php while ( have_posts() ) : the_post(); 
+						$number = get_field('kich_thuoc_trang');
+						$num = 3;
+						$nummobile = 6;
+						if($number == 1){
+							$num = 6;
+							$nummobile = 12;
+						}
+						
+						?>
+					<li class="col-md-<?php echo $num; ?> col-xs-<?php echo $nummobile; ?>">
+						<a href="<?php the_permalink() ?>" target="_blank" title="<?php echo get_the_title(); ?>">
+									<?php
+										 $attachment_id = get_post_thumbnail_id(get_the_ID());
+										 if (!empty($attachment_id)) { 
+												 the_post_thumbnail('full');
+												 ?>
+										 <?php }else{
+												 echo '<img src="'.get_stylesheet_directory_uri().'/images/no-img.jpg" alt="">';
+										 }
+								 ?>
+							
+						 </a>
+					</li>
+						<?php	endwhile; ?>
+					<?php	endif; ?>
+					<li class="col-md-3"></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+<?php else: ?>
+
+
+<?php if(!empty($category->category_parent)):
     if($parent->slug == 'magazine'): ?>
     <section id="wrap-magazine">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">            
                     <div class="title magazine">
-                        <h2><?php echo $parent->name; ?> / <?php echo $category[0]->name; ?></h2>
+                        <h2><?php echo ($parent->name)? $parent->name .'/': '' ; ?> <?php echo $category->name; ?></h2>
                         <div class="line">
                             <span class="icon-dotted-01"></span>
                         </div>
@@ -129,7 +191,6 @@ $vihicle_technology_args = array (
                             <?php
                             $excerpt = get_post_custom_values('excerpt', get_the_ID());
                             if(!empty($excerpt)){
-                                //echo filter_character($excerpt[0], 16);
                                 $excerpt = $excerpt[0];
                             }else{
                                 $excerpt = get_the_excerpt();
@@ -159,6 +220,7 @@ $vihicle_technology_args = array (
     <?php endif; ?>
 	
 <?php else: ?>
+
  <?php if ( have_posts() ) : ?>
 	
 	<section id="four-seasons" class="article-all fix-top">
@@ -193,13 +255,12 @@ $vihicle_technology_args = array (
                                         echo '<img src="'.get_stylesheet_directory_uri().'/images/no-img.jpg" alt="">';
                                     }
                                 ?>
-                                
 							</a>
 							<figcaption>
 								<a href="<?php the_permalink() ?>" title="<?php echo get_the_title(); ?>">
 									<?php echo filter_character(get_the_title(), 8); ?>
 								</a>
-								<?php if($category[0]->slug =='unideal'): ?>
+								<?php if($category->slug =='unideal'): ?>
 								<p>
 									<?php
 										
@@ -248,5 +309,6 @@ $vihicle_technology_args = array (
 	</section><!--end 4-seasons-->
 
 	<?php endif; ?>
+<?php endif; ?>
 <?php endif; ?>
 <?php get_footer(); ?>

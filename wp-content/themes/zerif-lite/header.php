@@ -65,7 +65,7 @@ endif;
 				<div class="col-xs-6 logo-sp">
 					<?php
 							echo '<a href="'.esc_url( home_url( '/' ) ).'">';
-									echo '<img src="'.get_template_directory_uri().'/images/logo.png" alt="'.get_bloginfo('title').'">';
+									echo '<img src="'.get_template_directory_uri().'/images/logo_'.$language.'.png" alt="'.get_bloginfo('title').'">';
 							echo '</a>';
 					?>
 				</div>
@@ -100,7 +100,8 @@ endif;
 			<div class="container">
 				<div class="row">
 				<div class="col-xs-4">
-					<i class="fa fa-list"></i><?php echo ($language == 'vi')?'Danh mục': 'Category'; ?>
+					<span class="menu-mb"><i class="fa fa-list"></i><?php echo ($language == 'vi')?'Danh mục': 'Category'; ?></span>
+					
 				</div>
 				<div class="col-xs-4">
 					<div class="form-search">
@@ -127,7 +128,7 @@ endif;
 		<script type="text/javascript">
 			jQuery(document).ready(function($){
 				$(".menu-left").css('height',$(window).height() - 40);
-				$("#header .fa-list").on('click', function(){
+				$("#header .menu-mb").on('click', function(){
 					$(".menu-mobile").addClass('site-page-frame');
 					$(".menu-showing").addClass('page-frame');
 					$("#side-menu-overlay").addClass('on');
@@ -184,7 +185,7 @@ endif;
 													<div class="col-md-2 col-sm-2">
 															<?php
 																	echo '<a href="'.esc_url( home_url( '/' ) ).'">';
-																			echo '<img src="'.get_template_directory_uri().'/images/logo.png" alt="'.get_bloginfo('title').'">';
+																			echo '<img src="'.get_template_directory_uri().'/images/logo_'.$language.'.png" alt="'.get_bloginfo('title').'">';
 																	echo '</a>';
 															?>
 													</div>

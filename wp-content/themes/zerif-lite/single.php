@@ -49,42 +49,90 @@ $category = get_the_category($post->ID);
 
 
 <?php
+$parent = get_category($category[0]->category_parent);
+if($parent->slug == 'magazine-online'):
+	get_header(); ?>
+<section id="wrapp-details" class="fix-top">
+    <div class="container">
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+						<div class="wrapp-breadcrumb">
+								<ol class="breadcrumb">
+										<?php if(function_exists('bcn_display'))
+										{
+												bcn_display();
+										}?>
+								</ol>
+
+						</div>
+				</div>
+				<div class="col-md-8 col-sm-8 col-xs-12">
+						<div class="show-details">
+										<?php while ( have_posts() ) : the_post(); 
+												get_template_part( 'content', 'single' );
+									 endwhile; // end of the loop. ?>
+						</div>
+				</div>
+				
+				<?php 
+                $featured = array (
+										'order'          => 'ASC',
+										'orderby'        => 'id',
+										'meta_key'			=> 'kich_thuoc_trang',
+										'orderby'			=> 'meta_value_num',
+                    'post_status'    => 'publish',		
+                    'post_type'      => 'post',
+                    'category_name'  => $category[0]->slug,
+										'posts_per_page' => 10,
+                    'post__not_in'   => array(get_the_ID())
+                );
+                $featured_the_query = new WP_Query( $featured ); 
+                if($featured_the_query){ ?>
+				<div id="sidebar" class="col-md-4 col-sm-4 col-xs-12 article-all">
+					<div class="page-header">
+							<h2><?php echo ($language =='vi')?'Bài liên quan':'Featured'; ?></h2>
+					</div>
+					<div class="row">
+							<div class="top-sub-featured">
+					<?php
+					while ($featured_the_query->have_posts()){
+							$featured_the_query->the_post(); 
+							$number = get_field('kich_thuoc_trang');
+							$num = 6;
+							if($number == 1){
+								$num = 12;
+							}
+							?>
+							<div class="col-md-<?php echo $num; ?> col-sm-<?php echo $num; ?> col-xs-<?php echo $num; ?> mg-20 show-article">
+									<figure>
+											<a href="<?php the_permalink() ?>">
+													 <?php
+															$attachment_id = get_post_thumbnail_id(get_the_ID());
+															if (!empty($attachment_id)) { 
+																	the_post_thumbnail(array(570, 380));
+																	?>
+															<?php }else{
+																	echo '<img src="'.get_stylesheet_directory_uri().'/images/no-img.jpg" alt="">';
+															}
+													?>
+
+											</a>
+									</figure>
+							</div>
+					<?php } ?>
+									</div><!--end top-sub-featured-->	
+							</div>
+					</div>
+			<?php }?>
+			</div>
+		</div>
+</section>
+<?php 	get_footer();
+else: ?>
+
+<?php
 if(empty($category[0]->category_parent)):
 get_header(); ?>
-<!--<section id="wrap-new-adv">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-sm-6 col-xs-12">
-                <?php //get_template_part('template-small/advertisement'); ?>
-            </div>
-
-            <div class="col-md-6 col-sm-6 col-xs-12">
-                <div class="row">
-                    <?php //get_template_part('template-small/advertisement_four'); ?>							
-                </div>
-            </div>
-        </div>
-    </div>
-</section>-->
-
-<!--end wrap-new-adv-->
-
-
-<!--<section id="wrap-magazine">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                    <?php //get_template_part('template-small/magazine'); ?>
-                end show-magazine
-            </div>
-        </div>
-    </div>
-</section>-->
-
-<!--end wrap-magazine-->
-
-
-
 <section id="wrapp-details" class="fix-top">
     <div class="container">
         <div class="row">
@@ -145,14 +193,7 @@ get_header(); ?>
                     'orderby'        => 'date',
                     'post_type'      => 'post',
                     'category_name'  => $category[0]->slug,
-           //          'meta_query'     => array(
-			        //     array(
-			        //         'key'		 => 'advertisement_top_page',
-			        //         'value'      => false,
-			        //         'compare' 	=> '=',
-			        //     ),
-			        // ),
-			        'posts_per_page' => 10,
+										'posts_per_page' => 10,
                     'post__not_in'   => array(get_the_ID())
                 );
                 $featured_the_query = new WP_Query( $featured ); 
@@ -528,6 +569,8 @@ openPhotoSwipe();
 <?php endif; ?>
 
 <?php endif;?>
+<?php endif; ?>
+
 <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/jquery-scrolltofixed.js"></script>
 <script type="text/javascript">
     var summaries = $('#sidebar');
@@ -551,7 +594,6 @@ openPhotoSwipe();
             });
         });
 </script>
-
 
 
 

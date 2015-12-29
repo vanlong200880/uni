@@ -37,7 +37,7 @@ if(!empty($keyword)):
             'orderby'        => 'date',
             'post_type'      => 'post',
             'paged'             => $paged,
-            'posts_per_page' => 20,
+            'posts_per_page' => 1,
             'category_name'     => $listCategorySlug,
             's' => $keyword
         );

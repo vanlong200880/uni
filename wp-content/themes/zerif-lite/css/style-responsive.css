@@ -331,7 +331,7 @@
 	    line-height: 34px;
 	}
 	.category-menu-left ul{
-		height: 280px;
+		height: 290px;
 		overflow: hidden;
 	}
 	.category-menu-left h2{
@@ -448,6 +448,9 @@
 	}
 }
 @media (max-width:767px){
+	.article-all .show-article img{
+		height: auto;
+	}
 	#header .navbar-right{
 		margin-right: -15px;
 	}
@@ -837,7 +840,7 @@
 	.menu-mobile{
 		width: 250px;
 		float: left;
-		background: #131426;
+		background: #f2f2f2;
 		height: 100%;
 		position: absolute;
 		z-index: 9999;

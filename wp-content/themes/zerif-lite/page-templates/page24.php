@@ -4,27 +4,15 @@
  */
 get_header(); ?>
 <?php 
-$arg = array(
-	'child_of'    => 0,
-	'parent'  => 0);
-$category = get_categories($arg);
-$list_category = array();
-if($category){
-	$arr = array('advertisement', 'magazine', 'uncategorised');
-	foreach ($category as $val){
-		if(!in_array($val->slug, $arr)){
-			array_push($list_category, $val->slug);
-		}
-	}
-}
 $paged = get_query_var('paged') ? get_query_var('paged') : 1;
 $args = array (					 
 		'post_status'    => 'publish',
-		'order'          => 'DESC',
-		'orderby'        => 'date',
+		'order'          => 'ASC',
+		'meta_key'			=> 'kich_thuoc_trang',
+		'orderby'			=> 'meta_value_num',
 		'post_type'      => 'post',
-		'posts_per_page' => 40,
-		'category_name'  => implode(',', $list_category),
+		'posts_per_page' => 80,
+		'category_name'  => 'magazine-online',
 		'paged' => $paged
 	);
 	$the_query = new WP_Query( $args ); 
@@ -44,42 +32,28 @@ $args = array (
 
     <?php 
         while ($the_query->have_posts()){
-            $the_query->the_post(); 
+            $the_query->the_post();
+						$number = get_field('kich_thuoc_trang');
+						$num = 3;
+						$nummobile = 6;
+						if($number == 1){
+							$num = 6;
+							$nummobile = 12;
+						}
             ?>
-            <div class="col-md-3 col-sm-3 col-xs-6 show-article">
+            <div class="col-md-<?php echo $num; ?> col-sm-<?php echo $num; ?> col-xs-<?php echo $nummobile; ?> show-article">
                 <figure>
 									<a class="figure-img" href="<?php the_permalink() ?>">
                         <?php
                             $attachment_id = get_post_thumbnail_id(get_the_ID());
                             if (!empty($attachment_id)) { 
-                                the_post_thumbnail(array(480, 320));
+                                the_post_thumbnail('full');
                                 ?>
                             <?php }else{
                                 echo '<img src="'.get_stylesheet_directory_uri().'/images/no-img.jpg" alt="">';
                             }
                         ?>
                     </a>
-                    <figcaption>
-                        <a href="<?php the_permalink() ?>">
-                            <?php the_title() ?>
-                        </a>
-                        <p>
-                            <?php
-                            $excerpt = get_post_custom_values('excerpt', get_the_ID());
-                            if(!empty($excerpt)){
-                                //echo filter_character($excerpt[0], 16);
-                                $excerpt = $excerpt[0];
-                            }else{
-                                $excerpt = get_the_excerpt();
-                            }
-                            echo filter_character($excerpt, 16);
-                            ?>
-                        </p>
-                        <div class="readmore">
-                            <span class="left"></span>
-                            <a href="<?php the_permalink() ?>"><?php echo ($language == 'vi')? 'Đọc thêm':'read more' ?> <span class="arrow">&rsaquo;&rsaquo;</span></a>
-                        </div>
-                    </figcaption>
                 </figure>
             </div>
         <?php } ?>
