@@ -205,27 +205,27 @@ add_filter('nav_menu_css_class' , 'uni_special_nav_class' , 10 , 2);
 /* custom form search */
 function uni_search_form( $form ) {
     global $language;
-    $parent_obj = get_category_by_slug('magazine');
-    $html = '<select name="type" class="form-control">';
-    $choose = ($language == 'vi')? '-- Chọn --': '-- Choose --';
-    $html .= '<option value="">'.$choose.'</option>';
-    if($parent_obj):
-        $args = array(
-            'orderby'           => 'id',
-            'order'             => 'DESC',
-            'parent'            => $parent_obj->term_id,
-            'taxonomy'          => 'category',
-            'hide_empty'        => 1 ,
-            'number'    => 10,
-          );
-        $categories = get_categories( $args );
-        if(!empty($categories)){
-            foreach ($categories as $value){
-                $html .= '<option value="'.$value->slug.'">'.$value->name.'</option>';
-            }
-        }
-    endif;
-    $html .= '</select>';
+//    $parent_obj = get_category_by_slug('magazine');
+//    $html = '<select name="type" class="form-control">';
+//    $choose = ($language == 'vi')? '-- Chọn --': '-- Choose --';
+//    $html .= '<option value="">'.$choose.'</option>';
+//    if($parent_obj):
+//        $args = array(
+//            'orderby'           => 'id',
+//            'order'             => 'DESC',
+//            'parent'            => $parent_obj->term_id,
+//            'taxonomy'          => 'category',
+//            'hide_empty'        => 1 ,
+//            'number'    => 10,
+//          );
+//        $categories = get_categories( $args );
+//        if(!empty($categories)){
+//            foreach ($categories as $value){
+//                $html .= '<option value="'.$value->slug.'">'.$value->name.'</option>';
+//            }
+//        }
+//    endif;
+//    $html .= '</select>';
 
     $keyword = ($language == 'vi')? 'Từ khóa': 'Keyword';
     $uri_home = preg_replace('/(http|https)\:\/\/'.$_SERVER['SERVER_NAME'].'/', '', WP_HOME);
@@ -241,9 +241,6 @@ function uni_search_form( $form ) {
 	$form = '
 	<form class="navbar-form navbar-right hide-search searchform form-inline" method="get" id="searchform" role="search" action="' . home_url( '/' ) . '">
 		'.$lang.'
-        <div class="form-group">
-			'.$html.'
-		</div>
         <div class="form-group form-group-sp">
 			<input type="text" class="form-control" placeholder="'.$keyword.'" value="' . get_search_query() . '" name="s" id="s">
             <button type="submit" id="searchsubmit" value="'. esc_attr__( 'Search' ) .'" class="btn btn-default">
