@@ -21,14 +21,19 @@
     
         <?php foreach ( $categories as $category ) { 
             $custom_field = get_field('featured_image', $category );
+						$status_field = get_field('status', $category );
             ?>
         <li>
+						
             <figure>
                 <a href="<?php echo get_category_link( $category->term_id ); ?>"><img src="<?php echo $custom_field['sizes']['zerif_magazine_category_thumbnail']; ?>" alt=""></a>
-                <!-- <figcaption>
-                    <p><a href="<?php //echo get_category_link( $category->term_id ); ?>"><?php //echo $category->name; ?></a></p>
-                </figcaption> -->
+                <?php if(!empty($status_field)): ?> 
+								<figcaption>
+                    <p><a href="<?php echo get_category_link( $category->term_id ); ?>"><?php echo $status_field; ?></a></p>
+                </figcaption> 
+								<?php endif; ?>
             </figure>
+					
         </li>
       <?php } ?>
 
