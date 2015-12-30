@@ -5,7 +5,8 @@
   padding-bottom: 10px;
   border-bottom: 1px solid #d5d5d5;
 }
-#header .top-header img{
+#header .top-header .logo-pc img{
+  padding-top: 12px;
   width: 100px;
 }
 #header .top-header ul.unimedia-services{
@@ -228,12 +229,12 @@
 }
 .category-menu-left ul li.unideal a:after,
 .category-menu-left ul li.page-24h a:after,
-.category-menu-left ul li.vehicle-technology a:after,
-.category-menu-left ul li.fashion-health a:after,
-.category-menu-left ul li.real-estate-source a:after,
-.category-menu-left ul li.home-electronics a:after,
-.category-menu-left ul li.taste-event a:after,
-.category-menu-left ul li.seasons-promotion a:after{
+.category-menu-left ul li.vihicle-technology-online a:after,
+.category-menu-left ul li.fashion-health-online a:after,
+.category-menu-left ul li.real-estate-source-online a:after,
+.category-menu-left ul li.home-electronics-online a:after,
+.category-menu-left ul li.taste-event-online a:after,
+.category-menu-left ul li.seasons-promotion-online a:after{
   content: " ";
   position: absolute;
   top: 0;
@@ -249,12 +250,12 @@
 }
 /*.category-menu-left ul li.unideal:hover a:after,*/
 /*.category-menu-left ul li.page-24h:hover a:after,*/
-.category-menu-left ul li.vehicle-technology:hover a:after,
-.category-menu-left ul li.fashion-health:hover a:after,
-.category-menu-left ul li.real-estate-source:hover a:after,
-.category-menu-left ul li.home-electronics:hover a:after,
-.category-menu-left ul li.taste-event:hover a:after,
-.category-menu-left ul li.seasons-promotion:hover a:after{
+.category-menu-left ul li.vihicle-technology-online:hover a:after,
+.category-menu-left ul li.fashion-health-online:hover a:after,
+.category-menu-left ul li.real-estate-source-online:hover a:after,
+.category-menu-left ul li.home-electronics-online:hover a:after,
+.category-menu-left ul li.taste-event-online:hover a:after,
+.category-menu-left ul li.seasons-promotion-online:hover a:after{
   width: 276px;
   -webkit-transition: width 0.2s;
   -moz-transition: width 0.2s;
@@ -268,22 +269,22 @@
 .category-menu-left ul li.page-24h a:after{ 
   background-color: #FF540D;
 }
-.category-menu-left ul li.vehicle-technology a:after{ 
+.category-menu-left ul li.vihicle-technology-online a:after{ 
   background-color: #34495d;
 }
-.category-menu-left ul li.fashion-health a:after{
+.category-menu-left ul li.fashion-health-online a:after{
   background-color: #95c11e;
 }
-.category-menu-left ul li.real-estate-source a:after{
+.category-menu-left ul li.real-estate-source-online a:after{
   background-color: #302683;
 }
-.category-menu-left ul li.home-electronics a:after{
+.category-menu-left ul li.home-electronics-online a:after{
   background-color: #009bb4;
 }
-.category-menu-left ul li.taste-event a:after{
+.category-menu-left ul li.taste-event-online a:after{
   background-color: #f39200;
 }
-.category-menu-left ul li.seasons-promotion a:after{
+.category-menu-left ul li.seasons-promotion-online a:after{
   background-color: #c51a1b;
 }
 .category-menu-left ul li span.icon-17,
@@ -949,4 +950,20 @@ body.category-unideal .wrapp-categories .show-article p{
 .wrap-about h1{
 	font-size: 14px;
 	font-weight: bold;
+}
+/*--css for margazine online--*/
+.show-post-online ul li,
+.article-all.show-post-online .show-article,
+.top-sub-featured.show-post-online .show-article{
+  margin-bottom: 10px;
+}
+.show-post-online ul li.magazine-1-2 img,
+.article-all.show-post-online .show-article.magazine-1-2 img{
+  max-height: 200px;
+}
+.top-sub-featured.show-post-online .show-article.magazine-1-2 img{
+  max-height: 130px;
+}
+.article-all.show-post-online .show-article img{
+  height: auto;
 }

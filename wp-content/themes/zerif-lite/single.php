@@ -93,7 +93,7 @@ if($parent->slug == 'magazine-online'):
 							<h2><?php echo ($language =='vi')?'Bài liên quan':'Featured'; ?></h2>
 					</div>
 					<div class="row">
-							<div class="top-sub-featured">
+							<div class="top-sub-featured show-post-online">
 					<?php
 					while ($featured_the_query->have_posts()){
 							$featured_the_query->the_post(); 
@@ -102,8 +102,12 @@ if($parent->slug == 'magazine-online'):
 							if($number == 1){
 								$num = 12;
 							}
+                            $class = '';
+                            if($number == '3'){
+                                $class = 'magazine-1-2';
+                            }
 							?>
-							<div class="col-md-<?php echo $num; ?> col-sm-<?php echo $num; ?> col-xs-<?php echo $num; ?> mg-20 show-article">
+							<div class="col-md-<?php echo $num; ?> col-sm-<?php echo $num; ?> col-xs-<?php echo $num; ?> <?php echo $class; ?> mg-20 show-article">
 									<figure>
 											<a href="<?php the_permalink() ?>">
 													 <?php

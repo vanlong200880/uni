@@ -18,7 +18,7 @@ $args = array (
 	$the_query = new WP_Query( $args ); 
 ?>
 <?php if($the_query -> have_posts()): ?>
-<section id="real-estate" class="article-all">
+<section id="real-estate" class="article-all show-post-online">
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
@@ -40,8 +40,12 @@ $args = array (
 							$num = 6;
 							$nummobile = 12;
 						}
+                        $class = '';
+                        if($number == '3'){
+                            $class = 'magazine-1-2';
+                        }
             ?>
-            <div class="col-md-<?php echo $num; ?> col-sm-<?php echo $num; ?> col-xs-<?php echo $nummobile; ?> show-article">
+            <div class="col-md-<?php echo $num; ?> col-sm-<?php echo $num; ?> col-xs-<?php echo $nummobile; ?> <?php echo $class; ?> show-article">
                 <figure>
 									<a class="figure-img" href="<?php the_permalink() ?>">
                         <?php

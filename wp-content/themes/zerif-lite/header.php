@@ -182,7 +182,7 @@ endif;
             
 										<div class="container">
 											<div class="row">
-													<div class="col-md-2 col-sm-2">
+													<div class="col-md-2 col-sm-2 logo-pc">
 															<?php
 																	echo '<a href="'.esc_url( home_url( '/' ) ).'">';
 																			echo '<img src="'.get_template_directory_uri().'/images/logo_'.$language.'.png" alt="'.get_bloginfo('title').'">';

@@ -10,7 +10,7 @@ $slug = $category->slug;
 $parent = get_category($category->category_parent);
 ?>
 <?php if($parent->slug == 'magazine-online' || $category->slug =='magazine-online'): ?>
-<section id="four-seasons">
+<section id="four-seasons" class="show-post-online">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
@@ -44,9 +44,13 @@ $parent = get_category($category->category_parent);
 							$num = 6;
 							$nummobile = 12;
 						}
+                        $class = '';
+                        if($number == '3'){
+                            $class = 'magazine-1-2';
+                        }
 						
 						?>
-					<li class="col-md-<?php echo $num; ?> col-xs-<?php echo $nummobile; ?>">
+					<li class="col-md-<?php echo $num; ?> col-xs-<?php echo $nummobile; ?> <?php echo $class; ?>">
 						<a href="<?php the_permalink() ?>" target="_blank" title="<?php echo get_the_title(); ?>">
 									<?php
 										 $attachment_id = get_post_thumbnail_id(get_the_ID());
@@ -60,9 +64,9 @@ $parent = get_category($category->category_parent);
 							
 						 </a>
 					</li>
-						<?php	endwhile; ?>
+					<?php	endwhile; ?>
 					<?php	endif; ?>
-					<li class="col-md-3"></li>
+					
 				</ul>
 			</div>
 		</div>

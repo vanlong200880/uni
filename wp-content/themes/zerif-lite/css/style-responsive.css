@@ -32,9 +32,6 @@
   #header .navigation nav.navbar-default .navbar-form .form-group .form-control {
     width: 100px;
   }
-/*#header .navigation nav.navbar-default form.navbar-right{
-  padding: 10px 10px;
-}*/
 	#wrap-new-adv .top-sub-adv img{
 		max-height: none;
 	}
@@ -62,51 +59,10 @@
 	#wrapp-details .show-details{
 		padding: 15px;
 	}
-	/*#health-taste.health-taste .show-article.col-md-12 {
-		min-height: 360px;
-	}
-	.article-all .wrapp-categories .show-article{
-		min-height: 255px;
-	}
-	#real-estate.article-all .show-article
-	{
-		min-height: 200px;
-	}*/
 	h2{
 		font-size: 20px;
 		font-weight: bold;
 	}
-	/*--show and hide--*/
-/*	#header .navigation nav.navbar>.container .navbar-brand{
-		display: none;
-	}
-	#header .navigation{
-		display: none;
-	}
-	#header .navigation-tablet{
-		display: block;
-	}
-	#header .top-header-sp{
-		display: none;
-	}
-	#header .top-header{
-		display: none;
-	}
-	#header .top-header-tablet{
-		display: block;
-	}
-	#header .wrapp-form-search-sp{
-		display: none;
-	}
-	#header .wrapp-form-search-tablet{
-		display: block;
-	}
-	#wrap-new-adv .big-new-adv ul.unimedia-services{
-		display: none;
-	}
-	#header .navigation nav.navbar-default form.hide-search{
-		display: block;
-	}*/
 	/*--css top-header-sp--*/
 	#header .top-header-tablet ul.unimedia-services{
 		width: 100%;
@@ -177,12 +133,6 @@
 	#wrap-magazine.wrap-magazine-related .show-magazine ul li{
 		width: 100%;
 		padding: 0 5px;
-	}
-	#wrap-magazine.wrap-magazine-related .show-magazine ul li{
-		/*width: 24%;
-	    height: 24%;
-	    margin-right: 1.3333%;
-		margin-bottom:20px;*/
 	}
 	#wrap-magazine.wrap-magazine-related .show-magazine ul li:last-child{
 		margin-right: 0%
@@ -266,7 +216,6 @@
 	#header .navigation-tablet .menu-tablet ul li{
 		display: inline-block;
 		float: left;
-		/*margin-right: 10px;*/
 	}
 	#header .navigation-tablet .menu-tablet ul li a{
 		color: #fff;
@@ -374,10 +323,14 @@
 		display: block;
 		overflow: hidden;
 	}
-  .category-menu-left ul li.page-24h a span,
-  .category-menu-left ul li.unideal a var {
-    padding: 3px 10px;
-  }
+	.category-menu-left ul li.page-24h a span,
+	.category-menu-left ul li.unideal a var {
+	    padding: 3px 10px;
+	  }
+	.show-post-online ul li.magazine-1-2 img, 
+	.article-all.show-post-online .show-article.magazine-1-2 img{
+		max-height: 100%;
+	}
 
 }
 @media screen and (max-width: 1024px) and (orientation: landscape){
@@ -387,13 +340,6 @@
   #header .navigation nav.navbar-default .navbar-form .form-group .form-control {
     width: auto;
   }
-	/*.article-all .wrapp-categories .show-article{
-		min-height: 250px;
-	}
-	#real-estate.article-all .show-article
-	{
-		min-height: 200px;
-	}*/
 	#wrap-new-adv .top-sub-adv img{
 		max-height: inherit;
     border: 1px solid #DDD;
@@ -473,42 +419,6 @@
 		font-size: 20px;
 		font-weight: bold;
 	}
-	/*--show and hide--*/
-/*	#header .navigation{
-		display: block;
-	}
-	#header .navigation-tablet{
-		display: none;
-	}
-	#header .navigation nav.navbar>.container .navbar-brand{
-		display: block;
-	}
-	#header .navigation-tablet nav.navbar>.container .navbar-brand{
-		display: none;
-	}
-	#header .top-header-sp{
-		display: block;
-	}
-	#header .top-header{
-		display: none;
-	}
-	#header .top-header-tablet{
-		display: none;
-	}
-	#header .wrapp-form-search-sp{
-		display: block;
-		margin-top: 10px;
-	}
-	#header .wrapp-form-search-tablet{
-		display: none;
-	}
-	#wrap-new-adv .big-new-adv ul.unimedia-services{
-		display: none;
-	}
-	#header .navigation nav.navbar-default form.hide-search{
-		display: none;
-	}*/
-
 	/*--css top-header-sp--*/
 	#header .top-header-sp{
 		width: 100%;
@@ -952,6 +862,14 @@
 	}
 	#wrap-new-adv .big-new-adv .owl-theme .owl-controls{
 		bottom: 10px;
+	}
+	/*--fix css post online--*/
+	.show-post-online h2{
+		font-size: 14px;
+	}
+	.show-post-online ul li.magazine-1-2 img, 
+	.article-all.show-post-online .show-article.magazine-1-2 img{
+		max-height: 100%;
 	}
 }
 @media (min-width: 640px) and (max-width: 767px){
