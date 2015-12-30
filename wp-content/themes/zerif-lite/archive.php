@@ -51,7 +51,7 @@ $parent = get_category($category->category_parent);
 						
 						?>
 					<li class="col-md-<?php echo $num; ?> col-xs-<?php echo $nummobile; ?> <?php echo $class; ?>">
-						<a href="<?php the_permalink() ?>" target="_blank" title="<?php echo get_the_title(); ?>">
+						<a href="<?php the_permalink() ?>" title="<?php echo get_the_title(); ?>">
 									<?php
 										 $attachment_id = get_post_thumbnail_id(get_the_ID());
 										 if (!empty($attachment_id)) { 

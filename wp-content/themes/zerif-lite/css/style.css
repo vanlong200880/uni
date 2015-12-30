@@ -966,4 +966,5 @@ body.category-unideal .wrapp-categories .show-article p{
 }
 .article-all.show-post-online .show-article img{
   height: auto;
+  width: 100%;
 }
