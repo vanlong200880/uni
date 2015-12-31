@@ -40,7 +40,7 @@ if(!empty($keyword)):
             'post_type'      => 'post',
             'category_name'     => 'magazine-online,seasons-promotion,taste-event,home-electronics,real-estate-source,advertisement,fashion-health',
             's' => $keyword,
-						'posts_per_page' => 2,
+						'posts_per_page' => 100,
 						'paged'             => $paged
         );
         $the_query = new WP_Query( $args );	?>
