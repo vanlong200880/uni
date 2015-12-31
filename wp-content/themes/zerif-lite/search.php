@@ -68,19 +68,19 @@ if(!empty($keyword)):
 														$img .= '<img src="'.get_stylesheet_directory_uri().'/images/no-img.jpg" alt="">';
 												}
 												if($field == 1){
-													$html1 .= '<li class="col-md-6 ma-gazine-1"><a href="'.get_the_permalink().'">'.$img.'</a></li>';
+													$html1 .= '<li class="col-md-6 ma-gazine-1"><a data-rel ="lightbox" href="'.wp_get_attachment_link($attachment_id, 'full').'" class="lightbox">'.$img.'</a></li>';
 												}
 												elseif($field == 2){
-													$html2 .= '<li class="col-md-3 ma-gazine-2"><a href="'.get_the_permalink().'">'.$img.'</a></li>';
+													$html2 .= '<li class="col-md-3 ma-gazine-2"><a class="lightbox" href="'.get_the_permalink().'">'.$img.'</a></li>';
 												}
 												elseif($field == 3){
-													$html3 .= '<li class="col-md-3 ma-gazine-3"><a href="'.get_the_permalink().'">'.$img.'</a></li>';
+													$html3 .= '<li class="col-md-3 ma-gazine-3"><a class="lightbox" href="'.get_the_permalink().'">'.$img.'</a></li>';
 												}else{
 													$html4 .= '<li class="col-md-3 none">';
 															$html4 .= '<figure>';
 																	$html4 .= '<a target="_blank" href="'.get_the_permalink().'">';
 																					if (!empty($attachment_id)) { 
-																							$html4 .= get_the_post_thumbnail(get_the_ID(), array(480, 701));
+																							$html4 .= get_the_post_thumbnail(get_the_ID(), array(480, 320));
 																					}else{
 																							$html4 .= '<img src="'.get_stylesheet_directory_uri().'/images/no-img.jpg" alt="">';
 																					}
