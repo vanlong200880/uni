@@ -68,7 +68,7 @@ if(!empty($keyword)):
 														$img .= '<img src="'.get_stylesheet_directory_uri().'/images/no-img.jpg" alt="">';
 												}
 												if($field == 1){
-													$html1 .= '<li class="col-md-6 ma-gazine-1"><a data-rel ="lightbox" href="'.wp_get_attachment_link($attachment_id, 'full').'" class="lightbox">'.$img.'</a></li>';
+													$html1 .= '<li class="col-md-6 ma-gazine-1"><a data-rel = "lightbox" href="'.wp_get_attachment_link($attachment_id, 'full').'">'.$img.'</a></li>';
 												}
 												elseif($field == 2){
 													$html2 .= '<li class="col-md-3 ma-gazine-2"><a class="lightbox" href="'.get_the_permalink().'">'.$img.'</a></li>';
