@@ -968,3 +968,28 @@ body.category-unideal .wrapp-categories .show-article p{
   height: auto;
   width: 100%;
 }
+.magazine-search ul li.ma-gazine-1,
+.magazine-search ul li.ma-gazine-2,
+.magazine-search ul li.ma-gazine-3{
+  margin-bottom: 10px;
+}
+.magazine-search ul li.ma-gazine-3 img{
+  max-height: 200px;
+}
+.magazine-search ul li.none{
+  margin-bottom: 20px;
+}
+.magazine-search ul li.none figure figcaption p{
+  margin-top: 5px;
+}
+.magazine-search ul li.none figure figcaption p a{
+  overflow: hidden;
+  display: block;
+  height: 20px;
+  line-height: 20px;
+  color: #000;
+}
+.magazine-search ul li.none figure figcaption p a:hover{
+  color: #E30513;
+}
+

@@ -890,7 +890,8 @@
 		min-height: inherit;
 		width: 100%;
 	}
-	#wrapp-details .top-sub-featured.show-post-online .show-article.magazine-1-2 img{
+	#wrapp-details .top-sub-featured.show-post-online .show-article.magazine-1-2 img,
+	.magazine-search ul li.ma-gazine-3 img{
 		max-height: 100%;
 	}
 }
