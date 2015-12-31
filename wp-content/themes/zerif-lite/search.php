@@ -58,6 +58,7 @@ if(!empty($keyword)):
 										$html1 = $html2  = $html3 = $html4 = '';
 										while ($the_query->have_posts()){
 												$the_query->the_post(); 
+												$field = get_field('kich_thuoc_trang');
 												$attachment_id = get_post_thumbnail_id(get_the_ID());
 												$img = '';
 												if (!empty($attachment_id)) {
@@ -75,7 +76,7 @@ if(!empty($keyword)):
 												elseif($field == 3){
 													$html3 .= '<li class="col-md-3 ma-gazine-3"><a href="'.get_the_permalink().'">'.$img.'</a></li>';
 												}else{
-													$html4 .= '<li class="none">';
+													$html4 .= '<li class="col-md-3 none">';
 															$html4 .= '<figure>';
 																	$html4 .= '<a target="_blank" href="'.get_the_permalink().'">';
 																					if (!empty($attachment_id)) { 
