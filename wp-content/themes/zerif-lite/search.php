@@ -67,14 +67,16 @@ if(!empty($keyword)):
 												<?php }else{
 														$img .= '<img src="'.get_stylesheet_directory_uri().'/images/no-img.jpg" alt="">';
 												}
+												$link = wp_get_attachment_link($attachment_id, 'full');
+//												var_dump($link);
 												if($field == 1){
-													$html1 .= '<li class="col-md-6 ma-gazine-1"><a data-rel = "lightbox" href="'.wp_get_attachment_link($attachment_id, 'full').'">'.$img.'</a></li>';
+													$html1 .= '<li class="col-md-6 col-sx ma-gazine-1">'.$link.'</li>';
 												}
 												elseif($field == 2){
-													$html2 .= '<li class="col-md-3 ma-gazine-2"><a class="lightbox" href="'.get_the_permalink().'">'.$img.'</a></li>';
+													$html2 .= '<li class="col-md-3 ma-gazine-2">'.$link.'</li>';
 												}
 												elseif($field == 3){
-													$html3 .= '<li class="col-md-3 ma-gazine-3"><a class="lightbox" href="'.get_the_permalink().'">'.$img.'</a></li>';
+													$html3 .= '<li class="col-md-3 ma-gazine-3">'.$link.'</li>';
 												}else{
 													$html4 .= '<li class="col-md-3 none">';
 															$html4 .= '<figure>';

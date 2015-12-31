@@ -48,21 +48,11 @@ $parent = get_category($category->category_parent);
                         if($number == '3'){
                             $class = 'magazine-1-2';
                         }
-						
+						$attachment_id = get_post_thumbnail_id(get_the_ID());
+						$link = wp_get_attachment_link($attachment_id, 'full');
 						?>
 					<li class="col-md-<?php echo $num; ?> col-xs-<?php echo $nummobile; ?> <?php echo $class; ?>">
-						<a href="<?php the_permalink() ?>" title="<?php echo get_the_title(); ?>">
-									<?php
-										 $attachment_id = get_post_thumbnail_id(get_the_ID());
-										 if (!empty($attachment_id)) { 
-												 the_post_thumbnail('full');
-												 ?>
-										 <?php }else{
-												 echo '<img src="'.get_stylesheet_directory_uri().'/images/no-img.jpg" alt="">';
-										 }
-								 ?>
-							
-						 </a>
+						<?php echo $link; ?>
 					</li>
 					<?php	endwhile; ?>
 					<?php	endif; ?>
