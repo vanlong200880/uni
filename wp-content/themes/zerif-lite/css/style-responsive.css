@@ -282,6 +282,8 @@
 	.category-menu-left ul{
 		height: 290px;
 		overflow: hidden;
+		position: relative;
+		z-index: 0;
 	}
 	.category-menu-left h2{
 		height: 35px;
