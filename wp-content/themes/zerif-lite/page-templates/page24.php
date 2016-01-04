@@ -45,7 +45,7 @@ $args = array (
                             $class = 'magazine-1-2';
                         }
             ?>
-            <div class="col-md-<?php echo $num; ?> col-sm-<?php echo $num; ?> col-xs-<?php echo $nummobile; ?> <?php echo $class; ?> show-article">
+            <div class="col-md-<?php echo $num; ?> col-sm-<?php echo $nummobile; ?> col-xs-<?php echo $nummobile; ?> <?php echo $class; ?> show-article">
                 <figure>
 									<a class="figure-img" href="<?php the_permalink() ?>">
                         <?php

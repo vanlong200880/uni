@@ -70,15 +70,15 @@ if(!empty($keyword)):
 												$link = wp_get_attachment_link($attachment_id, 'full');
 //												var_dump($link);
 												if($field == 1){
-													$html1 .= '<li class="col-md-6 col-sx ma-gazine-1">'.$link.'</li>';
+													$html1 .= '<li class="col-md-6 col-sm-12 col-sx ma-gazine-1">'.$link.'</li>';
 												}
 												elseif($field == 2){
-													$html2 .= '<li class="col-md-3 ma-gazine-2">'.$link.'</li>';
+													$html2 .= '<li class="col-md-3 col-xs-6 ma-gazine-2">'.$link.'</li>';
 												}
 												elseif($field == 3){
-													$html3 .= '<li class="col-md-3 ma-gazine-3">'.$link.'</li>';
+													$html3 .= '<li class="col-md-3 col-xs-6 ma-gazine-3">'.$link.'</li>';
 												}else{
-													$html4 .= '<li class="col-md-3 none">';
+													$html4 .= '<li class="col-md-3 col-xs-6 none">';
 															$html4 .= '<figure>';
 																	$html4 .= '<a target="_blank" href="'.get_the_permalink().'">';
 																					if (!empty($attachment_id)) { 

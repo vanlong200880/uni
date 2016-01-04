@@ -341,9 +341,14 @@
 	#wrapp-details .top-sub-featured.show-post-online .show-article{
 		margin-bottom: 10px;
 	}
-	#wrapp-details .top-sub-featured.show-post-online .show-article.magazine-1-2 img{
+	#wrapp-details .top-sub-featured.show-post-online .show-article.magazine-1-2 img,
+	.magazine-search ul li.ma-gazine-3 img{
 		max-height: 100%;
 	}
+	#header .top-header .logo-pc img{
+		padding-top: 0;
+	}
+
 }
 @media screen and (max-width: 1024px) and (orientation: landscape){
   #header .navigation nav.navbar-default .navbar-form button.btn.btn-default {
@@ -403,6 +408,11 @@
 	}
 	#header .navbar-right {
 	    margin-right: 62px;
+	}
+	.show-post-online ul li.magazine-1-2 img,
+	.magazine-search ul li.ma-gazine-3 img,
+	.article-all.show-post-online .show-article.magazine-1-2 img{
+		max-height: 164px;
 	}
 }
 @media (max-width:767px){
