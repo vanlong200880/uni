@@ -11,22 +11,28 @@ if(wpmd_is_notdevice()){
 if(is_archive()){
   $taget = '';
   switch ($slug) {
+    case 'seasons-promotion-online':
     case 'seasons-promotion':
         $taget = 'seasons_promotion';
         break;
+		case 'taste-event-online':
     case 'taste-event':
         $taget = 'taste_event';
         break;
+		case 'home-electronics-online':
     case 'home-electronics':
         $taget = 'home_electronics';
         break;
+		case 'real-estate-source-online':
     case 'real-estate-source':
         $taget = 'real_estate_source';
         break;
+		case 'vehicle-technology-online':
     case 'vehicle-technology':
         $taget = 'vehicle_technology';
         break;
-    case 'fashion-health':
+    case 'fashion-health-online':
+		case 'fashion-health':
         $taget = 'fashion_health';
         break;
 		default:

@@ -12,22 +12,28 @@ $list_id = array();
 if(is_archive()){	
   $taget = '';
   switch ($slug) {
+		case 'seasons-promotion-online':
     case 'seasons-promotion':
         $taget = 'seasons_promotion';
         break;
+		case 'taste-event-online':
     case 'taste-event':
         $taget = 'taste_event';
         break;
+		case 'home-electronics-online':
     case 'home-electronics':
         $taget = 'home_electronics';
         break;
+		case 'real-estate-source-online':
     case 'real-estate-source':
         $taget = 'real_estate_source';
         break;
+		case 'vehicle-technology-online':
     case 'vehicle-technology':
         $taget = 'vehicle_technology';
         break;
-    case 'fashion-health':
+    case 'fashion-health-online':
+		case 'fashion-health':
         $taget = 'fashion_health';
         break;
     default:
@@ -197,7 +203,7 @@ if(is_archive()){
         ),
         'posts_per_page' => 5,
 	);
-    $trevel_education_the_query = new WP_Query( $trevel_education_args ); 
+    $trevel_education_the_query = new WP_Query( $trevel_education_args );
     if($trevel_education_the_query->have_posts()){
         while ($trevel_education_the_query->have_posts()){
             $trevel_education_the_query->the_post();

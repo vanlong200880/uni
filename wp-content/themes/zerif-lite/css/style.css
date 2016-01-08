@@ -196,7 +196,7 @@
   color: #000;
   display: block;
   position: relative;
-  z-index: 9999;
+  z-index: 1;
 }
 .category-menu-left ul li a var{
 	font-style: normal;
@@ -208,9 +208,9 @@
   -o-transition:  none;
   transition:  none;
 }
-.category-menu-left ul li.high a{
+/*.category-menu-left ul li.high a{
   font-weight: bold;
-}
+}*/
 .category-menu-left ul li.unideal a var{
   background-color: #1abc9c;
   padding: 5px 15px;
@@ -229,7 +229,7 @@
 }
 .category-menu-left ul li.unideal a:after,
 .category-menu-left ul li.page-24h a:after,
-.category-menu-left ul li.vihicle-technology-online a:after,
+.category-menu-left ul li.vehicle-technology-online a:after,
 .category-menu-left ul li.fashion-health-online a:after,
 .category-menu-left ul li.real-estate-source-online a:after,
 .category-menu-left ul li.home-electronics-online a:after,
@@ -250,7 +250,7 @@
 }
 /*.category-menu-left ul li.unideal:hover a:after,*/
 /*.category-menu-left ul li.page-24h:hover a:after,*/
-.category-menu-left ul li.vihicle-technology-online:hover a:after,
+.category-menu-left ul li.vehicle-technology-online:hover a:after,
 .category-menu-left ul li.fashion-health-online:hover a:after,
 .category-menu-left ul li.real-estate-source-online:hover a:after,
 .category-menu-left ul li.home-electronics-online:hover a:after,
@@ -269,7 +269,7 @@
 .category-menu-left ul li.page-24h a:after{ 
   background-color: #FF540D;
 }
-.category-menu-left ul li.vihicle-technology-online a:after{ 
+.category-menu-left ul li.vehicle-technology-online a:after{ 
   background-color: #34495d;
 }
 .category-menu-left ul li.fashion-health-online a:after{
@@ -930,7 +930,7 @@ body.category-unideal .wrapp-categories .show-article p{
 .navigation nav.navbar.fixed{
   position: fixed;
   width: 100%;
-  z-index: 99999;
+  z-index: 10;
 	top: -30px;
   margin-top: 30px;
 	transition: margin-top 0.8s;
@@ -959,7 +959,11 @@ body.category-unideal .wrapp-categories .show-article p{
 }
 .show-post-online ul li.magazine-1-2 img,
 .article-all.show-post-online .show-article.magazine-1-2 img{
-  max-height: 200px;
+  max-height: 206px;
+}
+.show-post-online img{
+	max-height: 409px;
+	border: 1px solid #d5d5d5;
 }
 .top-sub-featured.show-post-online .show-article.magazine-1-2 img{
   max-height: 130px;

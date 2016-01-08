@@ -47,17 +47,11 @@ $args = array (
             ?>
             <div class="col-md-<?php echo $num; ?> col-sm-<?php echo $nummobile; ?> col-xs-<?php echo $nummobile; ?> <?php echo $class; ?> show-article">
                 <figure>
-									<a class="figure-img" href="<?php the_permalink() ?>">
                         <?php
-                            $attachment_id = get_post_thumbnail_id(get_the_ID());
-                            if (!empty($attachment_id)) { 
-                                the_post_thumbnail('full');
-                                ?>
-                            <?php }else{
-                                echo '<img src="'.get_stylesheet_directory_uri().'/images/no-img.jpg" alt="">';
-                            }
+														$attachment_id = get_post_thumbnail_id(get_the_ID());
+														$link = wp_get_attachment_link($attachment_id, 'full');
+                            echo $link;
                         ?>
-                    </a>
                 </figure>
             </div>
         <?php } ?>

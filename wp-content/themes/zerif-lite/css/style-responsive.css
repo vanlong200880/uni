@@ -26,6 +26,9 @@
 /* iPads (portrait) ----------- */
 
 @media screen and (min-width: 768px) and (max-width: 1024px){
+	.article-all.show-post-online img{
+		max-height: 100%;
+	}
   #header .navigation nav.navbar-default .navbar-form button.btn.btn-default {
     padding: 0px 5px;
   }
@@ -331,7 +334,7 @@
 	  }
 	.show-post-online ul li.magazine-1-2 img, 
 	.article-all.show-post-online .show-article.magazine-1-2 img{
-		max-height: 100%;
+		max-height: 266px;
 	}
 	.article-all.show-post-online .show-article a.figure-img {
 		max-height: inherit;

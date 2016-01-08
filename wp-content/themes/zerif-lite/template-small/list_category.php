@@ -9,7 +9,7 @@ $fashion_health_args = array (
         'category_name'  => $fashion_health,
         'posts_per_page' => 5,
 	);
-    $fashion_health_the_query = new WP_Query( $fashion_health_args ); 
+    $fashion_health_the_query = new WP_Query( $fashion_health_args );
     if($fashion_health_the_query->have_posts()){ 
         $idObj = get_category_by_slug($fashion_health); 
 ?>
@@ -18,7 +18,7 @@ $fashion_health_args = array (
         <div class="row">
 <div class="col-md-6 col-sm-6 col-xs-12">          
     <div class="title health">
-        <h2><a href="<?php echo get_category_link( $idObj->term_id ); ?>"><?php echo $idObj->name; ?></a></h2>
+        <h2><a href="<?php echo get_category_link( $idObj->term_id ); ?>"><?php echo ($language == 'vi') ? 'TIN MỚI ':''; ?><?php echo $idObj->name; ?><?php echo ($language == 'en') ? ' NEWS':''; ?></a></h2>
         <div class="line">
             <span class="icon-dotted-01"></span>
         </div>
@@ -116,7 +116,7 @@ $taste_event_args = array (
 <div class="col-md-6 col-sm-6 col-xs-12">
                 
     <div class="title health">
-        <h2><a href="<?php echo get_category_link( $idObj->term_id ); ?>"><?php echo $idObj->name; ?></a></h2>
+        <h2><a href="<?php echo get_category_link( $idObj->term_id ); ?>"><?php echo ($language == 'vi') ? 'TIN MỚI ':''; ?><?php echo $idObj->name; ?><?php echo ($language == 'en') ? ' NEWS':''; ?></a></h2>
         <div class="line">
             <span class="icon-dotted-01"></span>
         </div>
@@ -215,7 +215,7 @@ $real_estate_source_args = array (
         <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="title real">
-                    <h2><a href="<?php echo get_category_link( $idObj->term_id ); ?>"><?php echo $idObj->name; ?></a></h2>
+                    <h2><a href="<?php echo get_category_link( $idObj->term_id ); ?>"><?php echo ($language == 'vi') ? 'TIN MỚI ':''; ?><?php echo $idObj->name; ?><?php echo ($language == 'en') ? ' NEWS':''; ?></a></h2>
                     <div class="line">
                         <span class="icon-dotted-01"></span>
                     </div>
@@ -288,7 +288,7 @@ $home_electronics_args = array (
         <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="title real">
-                    <h2><a href="<?php echo get_category_link( $idObj->term_id ); ?>"><?php echo $idObj->name; ?></a></h2>
+                    <h2><a href="<?php echo get_category_link( $idObj->term_id ); ?>"><?php echo ($language == 'vi') ? 'TIN MỚI ':''; ?><?php echo $idObj->name; ?><?php echo ($language == 'en') ? ' NEWS':''; ?></a></h2>
                     <div class="line">
                         <span class="icon-dotted-01"></span>
                     </div>
@@ -361,7 +361,7 @@ $seasion_promotion_args = array (
         <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="title real">
-                    <h2><a href="<?php echo get_category_link( $idObj->term_id ); ?>"><?php echo $idObj->name; ?></a></h2>
+                    <h2><a href="<?php echo get_category_link( $idObj->term_id ); ?>"><?php echo ($language == 'vi') ? 'TIN MỚI ':''; ?><?php echo $idObj->name; ?><?php echo ($language == 'en') ? ' NEWS':''; ?></a></h2>
                     <div class="line">
                         <span class="icon-dotted-01"></span>
                     </div>
@@ -434,7 +434,7 @@ $vihicle_technology_args = array (
         <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="title real">
-                    <h2><a href="<?php echo get_category_link( $idObj->term_id ); ?>"><?php echo $idObj->name; ?></a></h2>
+                    <h2><a href="<?php echo get_category_link( $idObj->term_id ); ?>"><?php echo ($language == 'vi') ? 'TIN MỚI ':''; ?><?php echo $idObj->name; ?><?php echo ($language == 'en') ? ' NEWS':''; ?></a></h2>
                     <div class="line">
                         <span class="icon-dotted-01"></span>
                     </div>
