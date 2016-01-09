@@ -118,7 +118,7 @@ CUSTOMIZE BOOSTRAP
 #four-seasons .title.seasions{
   max-width: 640px;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 #health-taste .title.health,
 #health-taste .title.taste{
@@ -187,6 +187,7 @@ CUSTOMIZE BOOSTRAP
   width: 60px;
   height: 15px;
   left: 45%;
+  z-index: 9;
 }
 #wrap-magazine .title.magazine div.line span{
   background-color: #ECECEC;
