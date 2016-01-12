@@ -7,9 +7,8 @@ get_header(); ?>
 $paged = get_query_var('paged') ? get_query_var('paged') : 1;
 $args = array (					 
 		'post_status'    => 'publish',
-		'order'          => 'ASC',
+    'orderby'  => array( 'meta_value_num' => 'ASC', 'post_date' => 'DESC' ),
 		'meta_key'			=> 'kich_thuoc_trang',
-		'orderby'			=> 'meta_value_num',
 		'post_type'      => 'post',
 		'posts_per_page' => 80,
 		'category_name'  => 'magazine-online',
@@ -35,15 +34,20 @@ $args = array (
             $the_query->the_post();
 						$number = get_field('kich_thuoc_trang');
 						$num = 3;
+            $class = '';
 						$nummobile = 6;
 						if($number == 1){
+              $class = 'magazine-couple';
 							$num = 6;
 							$nummobile = 12;
 						}
-                        $class = '';
-                        if($number == '3'){
-                            $class = 'magazine-1-2';
-                        }
+            if($number == 2){
+              $class = 'magazine-single';
+						}
+            
+            if($number == '3'){
+                $class = 'magazine-1-2 magazine-single-half';
+            }
             ?>
             <div class="col-md-<?php echo $num; ?> col-sm-<?php echo $nummobile; ?> col-xs-<?php echo $nummobile; ?> <?php echo $class; ?> show-article">
                 <figure>

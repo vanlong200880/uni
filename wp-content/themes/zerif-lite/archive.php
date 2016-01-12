@@ -26,9 +26,8 @@ $parent = get_category($category->category_parent);
 					<?php 
 						$args = array(
 							'post_status'    => 'publish',
-							'order'          => 'ASC',
+              'orderby'  => array( 'meta_value_num' => 'ASC', 'post_date' => 'DESC' ),
 							'meta_key'			=> 'kich_thuoc_trang',
-							'orderby'			=> 'meta_value_num',
 							'post_type'      => 'post',
 							'category_name'  => $category->slug,
 						);
@@ -39,15 +38,20 @@ $parent = get_category($category->category_parent);
 						<?php while ( have_posts() ) : the_post(); 
 						$number = get_field('kich_thuoc_trang');
 						$num = 3;
+            $class = '';
 						$nummobile = 6;
 						if($number == 1){
+              $class = 'magazine-couple';
 							$num = 6;
 							$nummobile = 12;
 						}
-                        $class = '';
-                        if($number == '3'){
-                            $class = 'magazine-1-2';
-                        }
+            if($number == 2){
+              $class = 'magazine-single';
+						}
+            
+            if($number == '3'){
+                $class = 'magazine-1-2 magazine-single-half';
+            }
 						$attachment_id = get_post_thumbnail_id(get_the_ID());
 						$link = wp_get_attachment_link($attachment_id, 'full');
 						?>

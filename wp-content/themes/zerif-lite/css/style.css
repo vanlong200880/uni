@@ -999,4 +999,8 @@ body.category-unideal .wrapp-categories .show-article p{
 #sidebar.scroll-to-fixed-fixed{
   z-index: 9 !important;
 }
+.article-all.show-post-online .show-article.magazine-single,
+.article-all.show-post-online .show-article.magazine-couple{
+  min-height: 409px;
+}
 

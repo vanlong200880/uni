@@ -33,10 +33,8 @@ if(!empty($keyword)):
 //    if(!empty($listCategorySlug)){
         $args = array(
             'post_status'    => 'publish',		
-            'order'          => 'ASC',
-//            'orderby'        => 'date',
+            'orderby'  => array( 'meta_value_num' => 'ASC', 'post_date' => 'DESC' ),
 						'meta_key'			=> 'kich_thuoc_trang',
-						'orderby'			=> 'meta_value_num',
             'post_type'      => 'post',
             'category_name'     => 'magazine-online,seasons-promotion,taste-event,home-electronics,real-estate-source,advertisement,fashion-health',
             's' => $keyword,
