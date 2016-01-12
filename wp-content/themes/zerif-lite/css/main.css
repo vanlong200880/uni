@@ -110,7 +110,7 @@ CUSTOMIZE BOOSTRAP
 #travel-edu,
 #four-seasons,
 #health-taste{
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 #wrap-magazine .title.magazine,
 #real-estate .title.real,
@@ -118,13 +118,13 @@ CUSTOMIZE BOOSTRAP
 #four-seasons .title.seasions{
   max-width: 640px;
   margin: 0 auto;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 #health-taste .title.health,
 #health-taste .title.taste{
   max-width: 430px;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 #wrap-magazine .title h2,
