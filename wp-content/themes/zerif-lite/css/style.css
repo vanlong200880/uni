@@ -211,22 +211,34 @@
 /*.category-menu-left ul li.high a{
   font-weight: bold;
 }*/
-.category-menu-left ul li.unideal a var{
+/*.category-menu-left ul li.unideal a var{
   background-color: #1abc9c;
   padding: 5px 15px;
   border-radius: 22px;
   -moz-border-radius: 22px;
   -webkit-border-radius: 22px;
   color: #FFF;
+}*/
+.category-menu-left ul li.unideal{
+  background: #0FCEA8;
+  border-bottom: none;
 }
-.category-menu-left ul li.page-24h a span{
+.category-menu-left ul li.page-24h a,
+.category-menu-left ul li.unideal a{
+  color: #FFF;
+}
+.category-menu-left ul li.page-24h{
+  background: #EC4D0A;
+}
+
+/*.category-menu-left ul li.page-24h a span{
   background: #E30513;
   padding: 5px 15px;
   border-radius: 22px;
   -moz-border-radius: 22px;
   -webkit-border-radius: 22px;
   color: #FFF;
-}
+}*/
 .category-menu-left ul li.unideal a:after,
 .category-menu-left ul li.page-24h a:after,
 .category-menu-left ul li.vehicle-technology-online a:after,

@@ -10,7 +10,6 @@
 	<li class="page-24h high">
 		<a href="<?php echo get_site_url() ?>/<?php echo $language ?>/24h">
 			<span>24h</span>
-			<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/hot-fn.gif" alt="">
 		</a>
 	</li>
 	<?php
