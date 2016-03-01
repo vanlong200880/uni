@@ -187,6 +187,10 @@
   height: 41px;
   line-height: 41px;
 }
+.category-menu-left ul li.page-24h,
+.category-menu-left ul li.unideal{
+  font-weight: bold;
+}
 .container{
     padding-right: 5px;
     padding-left: 5px;

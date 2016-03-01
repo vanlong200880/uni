@@ -187,6 +187,12 @@ get_header(); ?>
                         <?php while ( have_posts() ) : the_post(); 
                             get_template_part( 'content', 'single' );
                        endwhile; // end of the loop. ?>
+                  <div class="share-post" style="text-align: right;">
+                      <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                      <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50dd5241008a00cc" async="async"></script>
+                      <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                      <div class="addthis_sharing_toolbox"></div>
+                  </div>
                 </div>
             </div>
 				<?php endif; ?>          

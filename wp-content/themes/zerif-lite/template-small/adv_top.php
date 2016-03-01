@@ -18,18 +18,21 @@
 ?>
 <?php if($adv_top_the_query -> have_posts()): ?>
         <?php while ($adv_top_the_query->have_posts()) {  $adv_top_the_query->the_post();?>
-            <?php $website = get_post_custom_values('website', get_the_ID()); ?>
-            <a target="_blank" href="<?php echo ($website[0] == '' || $website[0] == 'http://')? get_the_permalink() : $website[0] ?>" title="<?php the_title(); ?>">
+            <?php //$website = get_post_custom_values('website', get_the_ID()); ?>
+            <!--<a target="_blank" href="<?php //echo ($website[0] == '' || $website[0] == 'http://')? get_the_permalink() : $website[0] ?>" title="<?php //the_title(); ?>">-->
                 <?php
-                    $attachment_id = get_post_thumbnail_id(get_the_ID());
-                    if (!empty($attachment_id)) { 
-                        the_post_thumbnail('full');
+                  the_content();
+//                    $attachment_id = get_post_thumbnail_id(get_the_ID());
+//                    if (!empty($attachment_id)) {
+//                        the_post_thumbnail('full');
                         ?>
-                    <?php }else{
-                        echo '<img src="'.get_stylesheet_directory_uri().'/images/no-img-top.jpg" alt="">';
-                    }
+                    <?php 
+//                    
+//                    }else{
+//                        echo '<img src="'.get_stylesheet_directory_uri().'/images/no-img-top.jpg" alt="">';
+//                    }
                 ?>
-                </a>
+                <!--</a>-->
         <?php }?>
 <?php endif; ?>
 <?php wp_reset_postdata(); ?>
